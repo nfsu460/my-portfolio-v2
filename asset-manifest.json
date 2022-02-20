@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-portfolio-v2/static/css/main.7951cf04.css",
+    "main.js": "/my-portfolio-v2/static/js/main.d93c047e.js",
+    "static/js/787.8f635537.chunk.js": "/my-portfolio-v2/static/js/787.8f635537.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/my-portfolio-v2/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/me.png": "/my-portfolio-v2/static/media/me.8c9b73f7045f46d70de7.png",
+    "static/media/fontawesome-webfont.eot": "/my-portfolio-v2/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/my-portfolio-v2/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/Resume.pdf": "/my-portfolio-v2/static/media/Resume.c84b5867ee66045abd72.pdf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/my-portfolio-v2/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/my-portfolio-v2/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/oracle.png": "/my-portfolio-v2/static/media/oracle.995c90d9931d3d98aeb3.png",
+    "static/media/wipro.svg": "/my-portfolio-v2/static/media/wipro.dc0194be15423350bbb4cace3f269016.svg",
+    "static/media/main-logo.svg": "/my-portfolio-v2/static/media/main-logo.3c725507c0a39fa60eff6d3eb65f3a20.svg",
+    "index.html": "/my-portfolio-v2/index.html",
+    "main.7951cf04.css.map": "/my-portfolio-v2/static/css/main.7951cf04.css.map",
+    "main.d93c047e.js.map": "/my-portfolio-v2/static/js/main.d93c047e.js.map",
+    "787.8f635537.chunk.js.map": "/my-portfolio-v2/static/js/787.8f635537.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7951cf04.css",
+    "static/js/main.d93c047e.js"
+  ]
+}
