@@ -1,0 +1,114 @@
+.rr_about {
+  display: flex;
+  flex-direction: column;
+}
+
+.rr_about-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 1rem 0 1rem;
+}
+
+.rr_about-heading h1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  max-width: 510px;
+}
+
+.rr_about-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  margin-top: 2rem;
+}
+
+.rr_about-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rr_about-content p {
+  color: var(--color-subtext);
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.rr_about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+}
+
+.rr_about-image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rr_about-image img {
+  width: 70%;
+  height: 90%;
+}
+
+@media screen and (max-width: 1080px) {
+  .rr_about-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+
+  .rr_about-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rr_about-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .rr_about-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+
+  .rr_about-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* Customizing feature component as per needs */
+  .rr_about-feature .gpt3__features-container__feature {
+    flex-direction: column;
+  }
+
+  /* Customizing feature component as per needs */
+  .rr_about-feature .gpt3__features-container_feature-text {
+    margin-top: 0.5rem;
+  }
+
+  .rr_about-heading h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  /* Customizing feature component as per needs */
+  .rr_about-container .gpt3__features-container__feature {
+    margin: 1rem 0;
+    min-width: 100%;
+  }
+}
