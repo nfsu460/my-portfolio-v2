@@ -1,20 +1,18 @@
 import "./App.css";
-import About from "./components/About/About";
-import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "font-awesome/css/font-awesome.min.css";
-import Experience from "./components/Experience/Experience";
+import { Navbar } from './components';
+import { Header, About, Experience, Projects, Contacts } from './containers';
 
 function App() {
   return (
-    <div className="bg-dark">
-      <div class="container">
-          <Header />
-          <Main />
-          <About />
-          <Experience />
+    <div className="App">
+      <div className="gradient__bg">
+        <Navbar />
+        <Header />
       </div>
+      <About />
+      <Experience />
+      <Projects />
+      <Contacts />
     </div>
   );
 }
