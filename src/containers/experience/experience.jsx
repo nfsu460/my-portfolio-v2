@@ -1,11 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import { SiWipro, SiOracle } from "react-icons/si";
 
 import "./experience.css";
-import { Work } from "../../components";
 
 function Experience() {
   return (
@@ -33,7 +31,13 @@ function Experience() {
               <div className="rr_experience-panel_content-header">
                 <h2>
                   Application Engineer II @{" "}
-                  <a href="https://www.oracle.com/">Oracle</a>
+                  <a
+                    href="https://www.oracle.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Oracle
+                  </a>
                 </h2>
                 <p>September 2021 - Present</p>
               </div>
@@ -69,7 +73,14 @@ function Experience() {
             <div className="rr_experience-panel_content">
               <div className="rr_experience-panel_content-header">
                 <h2>
-                  Software Engineer @ <a href="https://www.wipro.com/">Wipro</a>
+                  Software Engineer @{" "}
+                  <a
+                    href="https://www.wipro.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Wipro
+                  </a>
                 </h2>
                 <p>June 2019 - September 2021</p>
               </div>

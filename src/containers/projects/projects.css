@@ -32,7 +32,11 @@
 
 @media screen and (max-width: 990px) {
   .rr__projects-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+
+  .rr__projects-container_group {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

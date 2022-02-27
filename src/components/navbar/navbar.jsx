@@ -11,7 +11,7 @@ function Navbar() {
     <div className="rr__navbar">
       <div className="rr__navbar-links_logo">
         <a href="/">
-          <img src={logo} />
+          <img src={logo} alt="" />
         </a>
       </div>
       <div className="rr__navbar-links">
@@ -31,7 +31,7 @@ function Navbar() {
         </div>
       </div>
       <div className="rr__navbar-sign">
-        <a href={resume} target="_blank">
+        <a href={resume} target="_blank" rel="noreferrer">
           <button type="button">Resume</button>
         </a>
       </div>
@@ -66,7 +66,7 @@ function Navbar() {
               </p>
             </div>
             <div className="rr__navbar-menu_container-links-sign">
-              <a href={resume} target="_blank">
+              <a href={resume} target="_blank" rel="noreferrer">
                 <button type="button">Resume</button>
               </a>
             </div>

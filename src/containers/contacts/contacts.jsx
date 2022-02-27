@@ -15,19 +15,31 @@ function Contacts() {
         </p>
         <br />
         <p>
-          <a href="https://www.github.com/nfsu460">
+          <a
+            href="https://www.github.com/nfsu460"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillGithub />
             {" Github"}
           </a>
         </p>
         <p>
-          <a href="https://leetcode.com/rahul_rahul/">
+          <a
+            href="https://leetcode.com/rahul_rahul/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <SiLeetcode />
             {" Leetcode"}
           </a>
         </p>
         <p>
-          <a href="https://www.hackerrank.com/Rahul460">
+          <a
+            href="https://www.hackerrank.com/Rahul460"
+            target="_blank"
+            rel="noreferrer"
+          >
             <SiHackerrank />
             {" HackerRank"}
           </a>

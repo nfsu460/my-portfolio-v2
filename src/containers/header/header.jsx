@@ -14,7 +14,7 @@ function Header() {
           I’m a software engineer specializing in building (and occasionally
           designing) exceptional digital experiences. Currently, I’m focused on
           building accessible, human-centered products at{" "}
-          <a href="https://www.oracle.com/" target="_blank">
+          <a href="https://www.oracle.com/" target="_blank" rel="noreferrer">
             Oracle
           </a>
           .
@@ -22,7 +22,7 @@ function Header() {
       </div>
 
       <div className="rr__header-image">
-        <img src={image} />
+        <img src={image} alt="" />
       </div>
     </div>
   );
