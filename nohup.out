@@ -1,0 +1,35 @@
+
+> my-portfolio-v2@0.1.0 start
+> react-scripts start
+
+(node:16204) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:16204) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view my-portfolio-v2 in the browser.
+
+  Local:            http://localhost:3000/my-portfolio-v2
+  On Your Network:  http://192.168.43.134:3000/my-portfolio-v2
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+assets by path [1m[32mstatic/[39m[22m 6.76 MiB
+  assets by path [1m[32mstatic/media/[39m[22m 492 KiB
+    assets by path [1m[32mstatic/media/*.png[39m[22m 360 KiB
+      asset [1m[32mstatic/media/dp_3.2681b8886c9227433635.png[39m[22m 248 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: src/assets/images/dp_3.png] (auxiliary name: main)
+      asset [1m[32mstatic/media/me.d58a3da7c869be0ee8d6.png[39m[22m 112 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: src/assets/images/me.png] (auxiliary name: main)
+    asset [1m[32mstatic/media/Resume.c84b5867ee66045abd72.pdf[39m[22m 131 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: src/assets/files/Resume.pdf] (auxiliary name: main)
+    asset [1m[32mstatic/media/main-logo.3c725507c0a39fa60eff6d3eb65f3a20.svg[39m[22m 749 bytes [1m[32m[emitted][39m[22m (auxiliary name: main)
+  assets by path [1m[32mstatic/js/*.js[39m[22m 6.28 MiB
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mstatic/js/node_modules_web-vitals_dist_web-vitals_js.chunk.js[39m[22m 6.94 KiB [1m[32m[emitted][39m[22m 1 related asset
+asset [1m[32masset-manifest.json[39m[22m 928 bytes [1m[32m[emitted][39m[22m
+asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 5.94 KiB [1m[33m[built][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 5308 ms

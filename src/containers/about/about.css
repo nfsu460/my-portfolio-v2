@@ -16,7 +16,6 @@
   font-size: 34px;
   line-height: 45px;
   font-weight: 800;
-  font-family: var(--font-family);
   max-width: 510px;
 }
 
@@ -43,8 +42,11 @@
 .rr_about-skills {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .rr_about-image {
@@ -55,8 +57,8 @@
 }
 
 .rr_about-image img {
-  width: 70%;
-  height: 90%;
+  width: 75%;
+  height: 75%;
 }
 
 @media screen and (max-width: 1080px) {
@@ -83,8 +85,17 @@
     margin-bottom: 0rem;
   }
 
+  .rr_about-content p {
+    line-height: 25px;
+    font-size: 14px;
+  }
+
   .rr_about-container {
     flex-direction: column;
+  }
+
+  .rr_about-image {
+    display: none;
   }
 }
 

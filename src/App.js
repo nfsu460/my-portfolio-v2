@@ -1,6 +1,6 @@
 import "./App.css";
-import { Navbar } from './components';
-import { Header, About, Experience, Projects, Contacts } from './containers';
+import { Navbar } from "./components";
+import { Header, About, Experience, Projects, Contacts } from "./containers";
 
 function App() {
   return (
