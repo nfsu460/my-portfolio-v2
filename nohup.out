@@ -33,3 +33,1052 @@ cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m
 runtime modules 31.4 KiB 15 modules
 ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 5.94 KiB [1m[33m[built][39m[22m
 webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 5308 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.96980270300bf31d7876.hot-update.js[39m[22m 7.12 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.96980270300bf31d7876.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (6.18 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.96980270300bf31d7876.hot-update.js[39m[22m 7.12 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/header/header.css[39m[22m 4.66 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 676 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.a693e2822b190a83518d.hot-update.js[39m[22m 7.12 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.a693e2822b190a83518d.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (6.18 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.a693e2822b190a83518d.hot-update.js[39m[22m 7.12 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/header/header.css[39m[22m 4.66 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 454 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.3f4c16cb403ede42a419.hot-update.js[39m[22m 7.12 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.3f4c16cb403ede42a419.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (6.18 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.3f4c16cb403ede42a419.hot-update.js[39m[22m 7.12 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/header/header.css[39m[22m 4.66 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 328 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.16035f07904ffe8efc74.hot-update.js[39m[22m 7.12 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.16035f07904ffe8efc74.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (6.18 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.16035f07904ffe8efc74.hot-update.js[39m[22m 7.12 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/header/header.css[39m[22m 4.66 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 309 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.f237b130dae78f5e7da9.hot-update.js[39m[22m 7.12 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.f237b130dae78f5e7da9.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (6.18 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.f237b130dae78f5e7da9.hot-update.js[39m[22m 7.12 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/header/header.css[39m[22m 4.66 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 367 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.aed200c5243eb2f6d9e9.hot-update.js[39m[22m 8.39 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.aed200c5243eb2f6d9e9.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (6.18 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.aed200c5243eb2f6d9e9.hot-update.js[39m[22m 8.39 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 5.94 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 470 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.e1a55f798a614413e0cc.hot-update.js[39m[22m 8.39 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.e1a55f798a614413e0cc.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (6.18 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.e1a55f798a614413e0cc.hot-update.js[39m[22m 8.39 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 5.94 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 329 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.55e4926848d19aca2f36.hot-update.js[39m[22m 8.39 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.55e4926848d19aca2f36.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (6.18 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.55e4926848d19aca2f36.hot-update.js[39m[22m 8.39 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 5.94 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 340 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.0af52cf0b337de59898a.hot-update.js[39m[22m 8.39 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.0af52cf0b337de59898a.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (6.18 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.0af52cf0b337de59898a.hot-update.js[39m[22m 8.39 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 5.94 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 329 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.8dc30fc64d90add831d7.hot-update.js[39m[22m 8.39 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.8dc30fc64d90add831d7.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (6.18 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.8dc30fc64d90add831d7.hot-update.js[39m[22m 8.39 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 5.94 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 339 ms
+Compiling...
+Compiled successfully!
+assets by status 6.76 MiB [1m[32m[cached][39m[22m 6 assets
+assets by path [1m[32m.[39m[22m 1.68 KiB
+  asset [1m[32masset-manifest.json[39m[22m 928 bytes [1m[32m[emitted][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+cached modules 5.46 MiB (javascript) 491 KiB (asset) 31.4 KiB (runtime) [1m[32m[cached][39m[22m 157 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.43 KiB [1m[33m[built][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 3563 ms
+Compiling...
+Compiled successfully!
+assets by status 6.76 MiB [1m[32m[cached][39m[22m 6 assets
+assets by path [1m[32m.[39m[22m 1.68 KiB
+  asset [1m[32masset-manifest.json[39m[22m 928 bytes [1m[32m[emitted][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+cached modules 5.46 MiB (javascript) 491 KiB (asset) 31.4 KiB (runtime) [1m[32m[cached][39m[22m 157 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/projects/projects.css[39m[22m 3 KiB [1m[33m[built][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 178 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.9748633f58d60fb9889a.hot-update.js[39m[22m 8.11 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.9748633f58d60fb9889a.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (6.17 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.9748633f58d60fb9889a.hot-update.js[39m[22m 8.11 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.38 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 728 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.bf151fe6d818a96808a6.hot-update.js[39m[22m 8.08 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.bf151fe6d818a96808a6.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (6.17 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.bf151fe6d818a96808a6.hot-update.js[39m[22m 8.08 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.35 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 412 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.2581b1c352209353e7d3.hot-update.js[39m[22m 7.95 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.2581b1c352209353e7d3.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (6.17 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.2581b1c352209353e7d3.hot-update.js[39m[22m 7.95 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.22 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 782 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.8e60d59a58095942669a.hot-update.js[39m[22m 7.92 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.8e60d59a58095942669a.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (6.17 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.8e60d59a58095942669a.hot-update.js[39m[22m 7.92 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.19 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 727 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.a0213eac0ce84bf5163b.hot-update.js[39m[22m 7.94 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.07 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.04 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.a0213eac0ce84bf5163b.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (6.17 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.a0213eac0ce84bf5163b.hot-update.js[39m[22m 7.94 KiB 6 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.21 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 394 ms
+Compiling...
+Compiled successfully!
+assets by status 499 KiB [1m[32m[cached][39m[22m 5 assets
+assets by status 7.28 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 7.28 MiB (name: main)
+    assets by path [1m[32mstatic/media/*.png[39m[22m 1020 KiB
+      asset [1m[32mstatic/media/portfolio-v2.b16adae61e7db53eb718.png[39m[22m 653 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: src/assets/images/portfolio-v2.png] [1m[32m[hmr][39m[22m (name: main) (auxiliary name: main)
+      asset [1m[32mstatic/media/portfolio-v1.e753330de5e01d64aab1.png[39m[22m 365 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: src/assets/images/portfolio-v1.png] [1m[32m[hmr][39m[22m (name: main) (auxiliary name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.4ef6e95f4ba3e2de5786.hot-update.js[39m[22m 9.06 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.48 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.45 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.4ef6e95f4ba3e2de5786.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 7.28 MiB (7.17 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.4ef6e95f4ba3e2de5786.hot-update.js[39m[22m 9.06 KiB [1m[32mstatic/media/portfolio-v1.e753330de5e01d64aab1.png[39m[22m 365 KiB [1m[32mstatic/media/portfolio-v2.b16adae61e7db53eb718.png[39m[22m 653 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 491 KiB (asset) [1m[32m[cached][39m[22m 142 modules
+runtime modules 31.4 KiB 15 modules
+modules by layer 5.44 KiB (javascript) 1020 KiB (asset)
+  [1m./src/containers/projects/projects.jsx[39m[22m 5.36 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  [1m./src/assets/images/portfolio-v2.png[39m[22m 42 bytes (javascript) 653 KiB (asset) [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  [1m./src/assets/images/portfolio-v1.png[39m[22m 42 bytes (javascript) 365 KiB (asset) [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 671 ms
+Compiling...
+Compiled successfully!
+assets by status 864 KiB [1m[32m[cached][39m[22m 6 assets
+assets by status 6.92 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.92 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mstatic/media/portfolio-v2.013e4227031b7faf14f6.png[39m[22m 654 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: src/assets/images/portfolio-v2.png] [1m[32m[hmr][39m[22m (name: main) (auxiliary name: main)
+    asset [1m[32mmain.47294cb9fce93f7e0117.hot-update.js[39m[22m 738 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.42 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.4 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.47294cb9fce93f7e0117.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.92 MiB (7.17 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.47294cb9fce93f7e0117.hot-update.js[39m[22m 738 bytes [1m[32mstatic/media/portfolio-v2.013e4227031b7faf14f6.png[39m[22m 654 KiB 8 auxiliary assets
+cached modules 5.47 MiB (javascript) 856 KiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/assets/images/portfolio-v2.png[39m[22m 42 bytes (javascript) 654 KiB (asset) [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 328 ms
+Compiling...
+Compiled successfully!
+assets by status 864 KiB [1m[32m[cached][39m[22m 6 assets
+assets by status 6.78 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.77 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mstatic/media/portfolio-v2.076ee72182204adf39f7.png[39m[22m 507 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: src/assets/images/portfolio-v2.png] [1m[32m[hmr][39m[22m (name: main) (auxiliary name: main)
+    asset [1m[32mmain.c14daa0fb7fe4ed0713c.hot-update.js[39m[22m 738 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.42 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.4 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.c14daa0fb7fe4ed0713c.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.77 MiB (7.02 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.c14daa0fb7fe4ed0713c.hot-update.js[39m[22m 738 bytes [1m[32mstatic/media/portfolio-v2.076ee72182204adf39f7.png[39m[22m 507 KiB 8 auxiliary assets
+cached modules 5.47 MiB (javascript) 856 KiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/assets/images/portfolio-v2.png[39m[22m 42 bytes (javascript) 507 KiB (asset) [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 331 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.6488d0ecc3e3e2aa2063.hot-update.js[39m[22m 8.34 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.6488d0ecc3e3e2aa2063.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.6488d0ecc3e3e2aa2063.hot-update.js[39m[22m 8.34 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.37 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 484 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.761ea174d9743fedc41d.hot-update.js[39m[22m 8.3 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.761ea174d9743fedc41d.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.761ea174d9743fedc41d.hot-update.js[39m[22m 8.3 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.32 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 489 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.1a40852a698bc3ec87a2.hot-update.js[39m[22m 8.29 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.1a40852a698bc3ec87a2.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.1a40852a698bc3ec87a2.hot-update.js[39m[22m 8.29 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.32 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 489 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.a0d8c8ef6c8da08129c9.hot-update.js[39m[22m 8.29 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.a0d8c8ef6c8da08129c9.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.a0d8c8ef6c8da08129c9.hot-update.js[39m[22m 8.29 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.32 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 368 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.71eeba9dd04820052bf2.hot-update.js[39m[22m 8.29 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.71eeba9dd04820052bf2.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.71eeba9dd04820052bf2.hot-update.js[39m[22m 8.29 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.31 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 380 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.f3eaa4e2709ce55d9299.hot-update.js[39m[22m 8.3 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.f3eaa4e2709ce55d9299.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.f3eaa4e2709ce55d9299.hot-update.js[39m[22m 8.3 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.32 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 442 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.1dfa509a48cab7924427.hot-update.js[39m[22m 8.54 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.1dfa509a48cab7924427.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.1dfa509a48cab7924427.hot-update.js[39m[22m 8.54 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.56 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 364 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.eb1dea90a1eda41bf8f7.hot-update.js[39m[22m 8.12 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.eb1dea90a1eda41bf8f7.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.eb1dea90a1eda41bf8f7.hot-update.js[39m[22m 8.12 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.14 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 385 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.ab9cfbceb210bae9f0f7.hot-update.js[39m[22m 8.18 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.ab9cfbceb210bae9f0f7.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.ab9cfbceb210bae9f0f7.hot-update.js[39m[22m 8.18 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.21 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 405 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.05cf4739ae5ef4c9abd7.hot-update.js[39m[22m 8.19 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.05cf4739ae5ef4c9abd7.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.05cf4739ae5ef4c9abd7.hot-update.js[39m[22m 8.19 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.21 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 665 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.30f4fbee842ce0da5526.hot-update.js[39m[22m 8.18 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.30f4fbee842ce0da5526.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.30f4fbee842ce0da5526.hot-update.js[39m[22m 8.18 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 5.21 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 371 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.80c49efaa1b5c1c179b3.hot-update.js[39m[22m 6.2 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.80c49efaa1b5c1c179b3.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.80c49efaa1b5c1c179b3.hot-update.js[39m[22m 6.2 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.72 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 463 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.604db94755ba4e87ffef.hot-update.js[39m[22m 6.2 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.604db94755ba4e87ffef.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.604db94755ba4e87ffef.hot-update.js[39m[22m 6.2 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.73 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 291 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.9bdceeebf2af2a40a507.hot-update.js[39m[22m 6.2 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.9bdceeebf2af2a40a507.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.9bdceeebf2af2a40a507.hot-update.js[39m[22m 6.2 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.72 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 296 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.c1b555fb9ad767d7656c.hot-update.js[39m[22m 6.2 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.c1b555fb9ad767d7656c.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.c1b555fb9ad767d7656c.hot-update.js[39m[22m 6.2 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.72 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 290 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.7d52d35e7c398187c055.hot-update.js[39m[22m 6.2 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.7d52d35e7c398187c055.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.7d52d35e7c398187c055.hot-update.js[39m[22m 6.2 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.72 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 291 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.751f688079915750f6fa.hot-update.js[39m[22m 6.2 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.751f688079915750f6fa.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.03 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.751f688079915750f6fa.hot-update.js[39m[22m 6.2 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.72 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 281 ms
+Compiling...
+Compiled successfully!
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.92719a311422ad13d153.hot-update.js[39m[22m 6.9 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.28 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.25 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.92719a311422ad13d153.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.02 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.92719a311422ad13d153.hot-update.js[39m[22m 6.9 KiB 8 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 4.2 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 431 ms
+Compiling...
+Compiled successfully!
+assets by status 7.62 MiB [1m[32m[cached][39m[22m 8 assets
+assets by path [1m[32m.[39m[22m 1.89 KiB
+  asset [1m[32masset-manifest.json[39m[22m 1.12 KiB [1m[32m[emitted][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) 31.4 KiB (runtime) [1m[32m[cached][39m[22m 159 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 4.2 KiB [1m[33m[built][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 146 ms
+Compiling...
+Compiled with warnings.
+
+src\containers\projects\projects.jsx
+  Line 7:8:  'coronavirusTracker' is defined but never used  no-unused-vars
+  Line 8:8:  'dutyAllocation' is defined but never used      no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+assets by status 1.34 MiB [1m[32m[cached][39m[22m 7 assets
+assets by status 6.32 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.32 MiB (name: main)
+    assets by path [1m[32mstatic/media/[39m[22m 35.9 KiB
+      asset [1m[32mstatic/media/duty-allocation.a9c6fefda27bdb9e5b45.avif[39m[22m 19.1 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: src/assets/images/duty-allocation.avif] [1m[32m[hmr][39m[22m (name: main) (auxiliary name: main)
+      asset [1m[32mstatic/media/coronavirus-tracker.5349e0f57b4712351c45.jpg[39m[22m 16.8 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: src/assets/images/coronavirus-tracker.jpg] [1m[32m[hmr][39m[22m (name: main) (auxiliary name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.b1040256c10a7f038eb6.hot-update.js[39m[22m 8.09 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.82 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.79 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.b1040256c10a7f038eb6.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.32 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.b1040256c10a7f038eb6.hot-update.js[39m[22m 8.09 KiB [1m[32mstatic/media/duty-allocation.a9c6fefda27bdb9e5b45.avif[39m[22m 19.1 KiB [1m[32mstatic/media/coronavirus-tracker.5349e0f57b4712351c45.jpg[39m[22m 16.8 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.33 MiB (asset) [1m[32m[cached][39m[22m 144 modules
+runtime modules 31.4 KiB 15 modules
+modules by layer 4.43 KiB (javascript) 35.9 KiB (asset)
+  [1m./src/containers/projects/projects.jsx[39m[22m 4.34 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  [1m./src/assets/images/coronavirus-tracker.jpg[39m[22m 42 bytes (javascript) 16.8 KiB (asset) [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  [1m./src/assets/images/duty-allocation.avif[39m[22m 42 bytes (javascript) 19.1 KiB (asset) [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+
+[1m[33mWARNING[39m[22m in [1m
+src\containers\projects\projects.jsx
+  Line 7:8:  'coronavirusTracker' is defined but never used  no-unused-vars
+  Line 8:8:  'dutyAllocation' is defined but never used      no-unused-vars
+
+[39m[22m
+
+webpack 5.69.1 compiled with [1m[33m1 warning[39m[22m in 626 ms
+Compiling...
+Compiled with warnings.
+
+src\containers\projects\projects.jsx
+  Line 9:8:  'blog01' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.e2981d3fabb956e82904.hot-update.js[39m[22m 7.34 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.e2981d3fabb956e82904.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.e2981d3fabb956e82904.hot-update.js[39m[22m 7.34 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 4.36 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+
+[1m[33mWARNING[39m[22m in [1m
+src\containers\projects\projects.jsx
+  Line 9:8:  'blog01' is defined but never used  no-unused-vars
+
+[39m[22m
+
+webpack 5.69.1 compiled with [1m[33m1 warning[39m[22m in 371 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.544ec2be221984febb3f.hot-update.js[39m[22m 7.17 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.544ec2be221984febb3f.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.544ec2be221984febb3f.hot-update.js[39m[22m 7.17 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 4.31 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 349 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.dba8b4fa0aa524340090.hot-update.js[39m[22m 6.23 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.dba8b4fa0aa524340090.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.dba8b4fa0aa524340090.hot-update.js[39m[22m 6.23 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.76 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 369 ms
+Compiling...
+Compiled successfully!
+assets by status 7.65 MiB [1m[32m[cached][39m[22m 10 assets
+assets by path [1m[32m.[39m[22m 2.13 KiB
+  asset [1m[32masset-manifest.json[39m[22m 1.35 KiB [1m[32m[emitted][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) 31.4 KiB (runtime) [1m[32m[cached][39m[22m 161 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.76 KiB [1m[33m[built][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 102 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.4f603d002b3bba81ea0f.hot-update.js[39m[22m 6.23 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.4f603d002b3bba81ea0f.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.4f603d002b3bba81ea0f.hot-update.js[39m[22m 6.23 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.76 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 339 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.77bf302af30d6753a34c.hot-update.js[39m[22m 6.23 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.77bf302af30d6753a34c.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.77bf302af30d6753a34c.hot-update.js[39m[22m 6.23 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.76 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 306 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.d4ea0690e97d00ff4b98.hot-update.js[39m[22m 6.23 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.d4ea0690e97d00ff4b98.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.d4ea0690e97d00ff4b98.hot-update.js[39m[22m 6.23 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.76 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 389 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.1c1d1b513a1f319d7e62.hot-update.js[39m[22m 6.26 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.1c1d1b513a1f319d7e62.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.1c1d1b513a1f319d7e62.hot-update.js[39m[22m 6.26 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.79 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 384 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.b6ceac3020e0869e7d98.hot-update.js[39m[22m 6.26 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.b6ceac3020e0869e7d98.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.b6ceac3020e0869e7d98.hot-update.js[39m[22m 6.26 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.79 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 314 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.c9bbd770d3114595b2e9.hot-update.js[39m[22m 6.26 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.c9bbd770d3114595b2e9.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.c9bbd770d3114595b2e9.hot-update.js[39m[22m 6.26 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.79 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 300 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.bad51f9cae9fd162f350.hot-update.js[39m[22m 5.89 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.bad51f9cae9fd162f350.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.bad51f9cae9fd162f350.hot-update.js[39m[22m 5.89 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.42 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 328 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.28 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.ce5e4d0c54dbea832183.hot-update.js[39m[22m 5.61 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.ce5e4d0c54dbea832183.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.ce5e4d0c54dbea832183.hot-update.js[39m[22m 5.61 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/components/project/project.css[39m[22m 3.14 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 304 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.cc44ffc30275fcac0fde.hot-update.js[39m[22m 5.93 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.cc44ffc30275fcac0fde.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.cc44ffc30275fcac0fde.hot-update.js[39m[22m 5.93 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/components/project/project.jsx[39m[22m 3.73 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 639 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.5951c80033eaf6a31e7e.hot-update.js[39m[22m 7.19 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.5951c80033eaf6a31e7e.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.5951c80033eaf6a31e7e.hot-update.js[39m[22m 7.19 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 4.33 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 463 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.858af8199d59c2cba164.hot-update.js[39m[22m 7.2 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.858af8199d59c2cba164.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.858af8199d59c2cba164.hot-update.js[39m[22m 7.2 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+[1m./src/containers/projects/projects.jsx[39m[22m 4.34 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 322 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.28 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.3ff8b4a7c88cdeeb7b26.hot-update.js[39m[22m 5.47 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.3ff8b4a7c88cdeeb7b26.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.3ff8b4a7c88cdeeb7b26.hot-update.js[39m[22m 5.47 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/projects/projects.css[39m[22m 2.99 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 428 ms
+Compiling...
+Compiled successfully!
+assets by status 7.65 MiB [1m[32m[cached][39m[22m 10 assets
+assets by path [1m[32m.[39m[22m 2.13 KiB
+  asset [1m[32masset-manifest.json[39m[22m 1.35 KiB [1m[32m[emitted][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) 31.4 KiB (runtime) [1m[32m[cached][39m[22m 161 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/projects/projects.css[39m[22m 2.99 KiB [1m[33m[built][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 95 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.28 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.0caec416c17aef072f80.hot-update.js[39m[22m 5.46 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.0caec416c17aef072f80.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.0caec416c17aef072f80.hot-update.js[39m[22m 5.46 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/projects/projects.css[39m[22m 2.99 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 351 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.28 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.28 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.63d7219c74eb3449f2f8.hot-update.js[39m[22m 5.48 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.63d7219c74eb3449f2f8.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.28 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.63d7219c74eb3449f2f8.hot-update.js[39m[22m 5.48 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/projects/projects.css[39m[22m 3 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 330 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.d3671eb8ee412b81b52e.hot-update.js[39m[22m 8.53 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.d3671eb8ee412b81b52e.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.d3671eb8ee412b81b52e.hot-update.js[39m[22m 8.53 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 6.08 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 500 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.133e96af7d8cc8211a6b.hot-update.js[39m[22m 8.52 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.133e96af7d8cc8211a6b.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.133e96af7d8cc8211a6b.hot-update.js[39m[22m 8.52 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 6.07 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 314 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.5d6f81bc1c5bfd66a044.hot-update.js[39m[22m 8.73 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.5d6f81bc1c5bfd66a044.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.5d6f81bc1c5bfd66a044.hot-update.js[39m[22m 8.73 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 6.27 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 384 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.a1355df5555da3130310.hot-update.js[39m[22m 8.73 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.a1355df5555da3130310.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.a1355df5555da3130310.hot-update.js[39m[22m 8.73 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 6.27 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 321 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.8d6973a1c2afdff3f4f0.hot-update.js[39m[22m 8.73 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.8d6973a1c2afdff3f4f0.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.8d6973a1c2afdff3f4f0.hot-update.js[39m[22m 8.73 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 6.27 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 289 ms
+Compiling...
+Compiled successfully!
+assets by status 1.37 MiB [1m[32m[cached][39m[22m 9 assets
+assets by status 6.29 MiB [1m[32m[emitted][39m[22m
+  assets by chunk 6.29 MiB (name: main)
+    asset [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+    asset [1m[32mmain.206ce4ad15eae87ec62f.hot-update.js[39m[22m 8.73 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+  assets by path [1m[32m*.json[39m[22m 1.51 KiB
+    asset [1m[32masset-manifest.json[39m[22m 1.49 KiB [1m[32m[emitted][39m[22m
+    asset [1m[32mmain.206ce4ad15eae87ec62f.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+  asset [1m[32mindex.html[39m[22m 794 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 6.29 MiB (7.06 MiB) = [1m[32mstatic/js/bundle.js[39m[22m 6.28 MiB [1m[32mmain.206ce4ad15eae87ec62f.hot-update.js[39m[22m 8.73 KiB 10 auxiliary assets
+cached modules 5.46 MiB (javascript) 1.37 MiB (asset) [1m[32m[cached][39m[22m 146 modules
+runtime modules 31.4 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js![1m./src/containers/about/about.css[39m[22m 6.27 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.69.1 compiled [1m[32msuccessfully[39m[22m in 276 ms
