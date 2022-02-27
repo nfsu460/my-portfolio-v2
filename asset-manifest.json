@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio-v2/static/css/main.c4ff14bc.css",
-    "main.js": "/my-portfolio-v2/static/js/main.9629695d.js",
+    "main.css": "/my-portfolio-v2/static/css/main.afbe87c4.css",
+    "main.js": "/my-portfolio-v2/static/js/main.2a3cd26b.js",
     "static/js/787.8f635537.chunk.js": "/my-portfolio-v2/static/js/787.8f635537.chunk.js",
     "static/media/portfolio-v2.png": "/my-portfolio-v2/static/media/portfolio-v2.076ee72182204adf39f7.png",
     "static/media/portfolio-v1.png": "/my-portfolio-v2/static/media/portfolio-v1.e753330de5e01d64aab1.png",
@@ -12,12 +12,12 @@
     "static/media/coronavirus-tracker.jpg": "/my-portfolio-v2/static/media/coronavirus-tracker.5349e0f57b4712351c45.jpg",
     "index.html": "/my-portfolio-v2/index.html",
     "static/media/main-logo.svg": "/my-portfolio-v2/static/media/main-logo.3c725507c0a39fa60eff6d3eb65f3a20.svg",
-    "main.c4ff14bc.css.map": "/my-portfolio-v2/static/css/main.c4ff14bc.css.map",
-    "main.9629695d.js.map": "/my-portfolio-v2/static/js/main.9629695d.js.map",
+    "main.afbe87c4.css.map": "/my-portfolio-v2/static/css/main.afbe87c4.css.map",
+    "main.2a3cd26b.js.map": "/my-portfolio-v2/static/js/main.2a3cd26b.js.map",
     "787.8f635537.chunk.js.map": "/my-portfolio-v2/static/js/787.8f635537.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4ff14bc.css",
-    "static/js/main.9629695d.js"
+    "static/css/main.afbe87c4.css",
+    "static/js/main.2a3cd26b.js"
   ]
 }
