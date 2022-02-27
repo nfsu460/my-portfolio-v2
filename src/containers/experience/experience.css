@@ -1,0 +1,158 @@
+.rr_experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.rr_experience-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 1rem 0 1rem;
+}
+
+.rr_experience-heading h1 {
+  font-size: 48px;
+  line-height: 45px;
+  font-weight: 800;
+  max-width: 510px;
+}
+
+.react-tabs {
+  display: flex;
+  color: white;
+  background: var(--color-bg);
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: var(--color-bg);
+}
+
+.react-tabs__tab {
+  height: 60px;
+  list-style: none;
+  padding: 12px 6px;
+  border-left: 4px solid grey;
+  cursor: pointer;
+  color: grey;
+}
+
+.react-tabs__tab--selected {
+  background: var(--color-bg);
+  border-left: 4px solid aqua;
+  color: white;
+}
+
+.react-tabs__tab-panel {
+  display: block;
+  max-width: 80%;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.react-tabs__tab {
+  padding-left: 24px;
+}
+
+.react-tabs__tab--selected {
+  padding-left: 21px;
+}
+
+.rr_experience-panel_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.rr_experience-panel_content-header h2 {
+  font-size: 25.11px;
+  font-weight: 800;
+  line-height: 30.3px;
+
+  color: var(--color-text);
+}
+
+.rr_experience-panel_content-header p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30.3px;
+  margin-bottom: 1rem;
+  color: var(--color-subtext);
+}
+
+.rr_experience-panel_content-body p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30.3px;
+  color: var(--color-subtext);
+  cursor: pointer;
+}
+
+/*Reactive*/
+@media screen and (max-width: 1080px) {
+  .rr_experience-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+
+  .rr_experience-panel_content-header h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .rr_experience-heading {
+    font-size: 22px;
+  }
+
+  .react-tabs {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .react-tabs__tab-list {
+    flex-direction: row;
+  }
+
+  .react-tabs__tab {
+    border-top: 4px solid grey;
+    border-left: none;
+    padding-left: 40%;
+    padding-right: 40%;
+  }
+
+  .react-tabs__tab--selected {
+    border-top: 4px solid aqua;
+    border-left: none;
+    padding-left: 40%;
+    padding-right: 40%;
+  }
+
+  .react-tabs__tab-panel {
+    max-width: 100%;
+    padding-top: 5px;
+  }
+
+  .rr_experience-panel_content-header h2 {
+    font-size: 20px;
+  }
+
+  .rr_experience-panel_content-header p {
+    font-size: 11px;
+  }
+
+  .rr_experience-panel_content-body p {
+    font-size: 13px;
+  }
+}

@@ -9,7 +9,7 @@ import dutyAllocation from "../../assets/images/duty-allocation.avif";
 
 function Projects() {
   return (
-    <div className="rr__projects section__padding" id="blog">
+    <div className="rr__projects section__padding" id="projects">
       <div className="rr__projects-heading">
         <h1 className="gradient__text">Projects</h1>
       </div>
