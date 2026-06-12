@@ -27,14 +27,17 @@ function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    try {
-      const list = dataStore.getProjects();
-      setProjects(list);
-    } catch (err) {
-      console.error("Error fetching projects:", err);
-    } finally {
-      setLoading(false);
-    }
+    const fetchData = async () => {
+      try {
+        const list = await dataStore.getProjects();
+        setProjects(list);
+      } catch (err) {
+        console.error("Error fetching projects:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
   }, []);
 
   return (

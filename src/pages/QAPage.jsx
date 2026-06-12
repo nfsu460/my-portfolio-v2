@@ -15,26 +15,29 @@ function QAPage() {
 
   // Fetch questions from dataStore
   useEffect(() => {
-    try {
-      const list = dataStore.getQuestions();
-      const fetched = [];
-      const allTags = new Set(["All"]);
+    const fetchData = async () => {
+      try {
+        const list = await dataStore.getQuestions();
+        const fetched = [];
+        const allTags = new Set(["All"]);
 
-      list.forEach((item) => {
-        fetched.push(item);
-        if (item.tags && Array.isArray(item.tags)) {
-          item.tags.forEach((tag) => allTags.add(tag));
-        }
-      });
+        list.forEach((item) => {
+          fetched.push(item);
+          if (item.tags && Array.isArray(item.tags)) {
+            item.tags.forEach((tag) => allTags.add(tag));
+          }
+        });
 
-      setQuestions(fetched);
-      setFilteredQuestions(fetched);
-      setTags(Array.from(allTags));
-    } catch (err) {
-      console.error("Error fetching questions:", err);
-    } finally {
-      setLoading(false);
-    }
+        setQuestions(fetched);
+        setFilteredQuestions(fetched);
+        setTags(Array.from(allTags));
+      } catch (err) {
+        console.error("Error fetching questions:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
   }, []);
 
   // Filter questions based on search query and selected tag

@@ -14,20 +14,23 @@ function Contacts() {
   });
 
   useEffect(() => {
-    try {
-      const data = dataStore.getProfile();
-      if (data && data.personal) {
-        setContactInfo({
-          email: data.personal.email || "nfsu460@gmail.com",
-          github: data.personal.github || "https://www.github.com/nfsu460",
-          linkedin: data.personal.linkedin || "https://linkedin.com/in/rahul460",
-          leetcode: data.personal.leetcode || "https://leetcode.com/rahul_rahul/",
-          hackerrank: data.personal.hackerrank || "https://www.hackerrank.com/Rahul460"
-        });
+    const fetchData = async () => {
+      try {
+        const data = await dataStore.getProfile();
+        if (data && data.personal) {
+          setContactInfo({
+            email: data.personal.email || "nfsu460@gmail.com",
+            github: data.personal.github || "https://www.github.com/nfsu460",
+            linkedin: data.personal.linkedin || "https://linkedin.com/in/rahul460",
+            leetcode: data.personal.leetcode || "https://leetcode.com/rahul_rahul/",
+            hackerrank: data.personal.hackerrank || "https://www.hackerrank.com/Rahul460"
+          });
+        }
+      } catch (err) {
+        console.error("Error fetching contacts:", err);
       }
-    } catch (err) {
-      console.error("Error fetching contacts:", err);
-    }
+    };
+    fetchData();
   }, []);
 
   return (
