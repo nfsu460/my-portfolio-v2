@@ -72,6 +72,7 @@ export const dataStore = {
     return true;
   },
 
+
   // Experiences
   getExperiences: async () => {
     if (!db) throw new Error("Firestore is not initialized.");
