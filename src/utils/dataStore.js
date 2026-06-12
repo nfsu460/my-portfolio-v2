@@ -40,7 +40,16 @@ export const dataStore = {
     try {
       const docSnap = await getDoc(doc(db, "resume_data", "profile"));
       if (docSnap.exists()) {
-        return docSnap.data();
+        const data = docSnap.data();
+        return {
+          personal: {
+            ...fallbackData.personal,
+            ...data.personal
+          },
+          skills: data.skills || fallbackData.skills,
+          achievements: data.achievements || fallbackData.achievements,
+          education: data.education || fallbackData.education
+        };
       }
     } catch (err) {
       console.error("Firestore getProfile error:", err);
@@ -49,14 +58,20 @@ export const dataStore = {
     return {
       personal: fallbackData.personal,
       skills: fallbackData.skills,
+      education: fallbackData.education,
       achievements: fallbackData.achievements
     };
   },
-  saveProfile: async (personal, skills, achievements) => {
+  saveProfile: async (personal, skills, achievements, education) => {
     if (!db) throw new Error("Firestore is not initialized.");
-    await setDoc(doc(db, "resume_data", "profile"), { personal, skills, achievements });
+    const docData = { personal, skills, achievements };
+    if (education) {
+      docData.education = education;
+    }
+    await setDoc(doc(db, "resume_data", "profile"), docData, { merge: true });
     return true;
   },
+
 
   // Experiences
   getExperiences: async () => {

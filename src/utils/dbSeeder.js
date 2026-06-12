@@ -1,4 +1,4 @@
-import { doc, setDoc, collection, getDocs, writeBatch } from "firebase/firestore";
+import { doc, setDoc, getDoc, collection, getDocs, writeBatch } from "firebase/firestore";
 import { db } from "../firebase";
 
 const resumeData = {
@@ -174,6 +174,24 @@ export const seedDatabase = async (force = false) => {
     // 1. Check if database is already seeded by checking the resume collection
     const resumeSnap = await getDocs(collection(db, "resume_data"));
     if (!resumeSnap.empty && !force) {
+      // Ensure tagline exists in Firestore if it was seeded in a previous session
+      try {
+        const resumeRef = doc(db, "resume_data", "profile");
+        const resumeDoc = await getDoc(resumeRef);
+        if (resumeDoc.exists()) {
+          const data = resumeDoc.data();
+          if (!data.personal || !data.personal.tagline) {
+            await setDoc(resumeRef, {
+              personal: {
+                tagline: "I build things for the web."
+              }
+            }, { merge: true });
+            console.log("Successfully backfilled tagline in Firestore profile document.");
+          }
+        }
+      } catch (err) {
+        console.warn("Skipped tagline database backfill check:", err);
+      }
       console.log("Database already seeded. Skipping seeder.");
       return false;
     }

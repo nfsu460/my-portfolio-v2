@@ -17,7 +17,7 @@ function Navbar() {
       <div className="rr__navbar-links">
         <div className="rr__navbar-links_container">
           <p>
-            <a href="/#about">About</a>
+            <a href="/#skills">Skills</a>
           </p>
           <p>
             <a href="/#experience">Experience</a>
@@ -26,10 +26,13 @@ function Navbar() {
             <a href="/#projects">Projects</a>
           </p>
           <p>
+            <a href="/#education">Education</a>
+          </p>
+          <p>
             <a href="/#contacts">Contacts</a>
           </p>
           <p>
-            <a href="/qa">Q&A</a>
+            <a href="/qa">Field Notes</a>
           </p>
         </div>
       </div>
@@ -41,13 +44,13 @@ function Navbar() {
       <div className="rr__navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
-            color="#fff"
+            color="var(--ink)"
             size={27}
             onClick={() => setToggleMenu(false)}
           />
         ) : (
           <RiMenu3Line
-            color="#fff"
+            color="var(--ink)"
             size={27}
             onClick={() => setToggleMenu(true)}
           />
@@ -56,7 +59,7 @@ function Navbar() {
           <div className="rr__navbar-menu_container scale-up-center">
             <div className="rr__navbar-menu_container-links">
               <p>
-                <a href="/#about">About</a>
+                <a href="/#skills">Skills</a>
               </p>
               <p>
                 <a href="/#experience">Experience</a>
@@ -65,10 +68,13 @@ function Navbar() {
                 <a href="/#projects">Projects</a>
               </p>
               <p>
+                <a href="/#education">Education</a>
+              </p>
+              <p>
                 <a href="/#contacts">Contacts</a>
               </p>
               <p>
-                <a href="/qa">Q&A</a>
+                <a href="/qa">Field Notes</a>
               </p>
               <p>
                 <a href="/admin">Admin</a>

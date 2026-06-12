@@ -1,14 +1,172 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap');
 
 :root {
-  --font-family: "Manrope", sans-serif;
+  --font-display: "Syne", "Manrope", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 
-  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
-  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  /* HSL Color System */
+  --ink: hsl(222, 47%, 11%);
+  --ink-rgb: 15, 23, 42;
+  --paper: hsl(40, 18%, 94%);
+  --surface: hsl(40, 25%, 99%);
+  --signal: hsl(255, 85%, 60%);
+  --signal-deep: hsl(255, 85%, 50%);
+  --border: hsl(35, 14%, 82%);
+  --grid-line: hsl(220, 14%, 88%);
+  --radius: 1.5rem;
+}
 
-  --color-bg: #040c18;
-  --color-text: #fff;
-  --color-subtext: #b1d3f8;
-  --color-link: white;
-  --color-footer: #031b34;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--paper);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--paper);
+  background-image: linear-gradient(
+    165deg,
+    var(--paper) 0%,
+    hsl(38, 22%, 91%) 45%,
+    hsl(200, 12%, 92%) 100%
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--ink);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/* Noise overlay for tactile feel */
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Selection */
+*::selection {
+  background: var(--signal);
+  color: var(--surface);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--paper);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--ink);
+  border: 2px solid var(--paper);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--signal);
+}
+
+/* Layout Utilities */
+.content-width {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section__padding {
+  padding: 4rem 0;
+}
+
+.section__margin {
+  margin: 4rem auto;
+}
+
+/* Neo-brutalist Utilities */
+.surface-card {
+  background-color: var(--surface);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 6px 6px 0px var(--ink);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.surface-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px var(--signal);
+}
+
+.pill-signal {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: var(--ink);
+  color: var(--surface);
+  padding: 0.25rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 3px 3px 0px var(--signal);
+  border: 1px solid var(--ink);
+}
+
+.chip-tech {
+  display: inline-block;
+  background-color: var(--paper);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  padding: 0.25rem 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.chip-tech:hover {
+  border-color: var(--signal-deep);
+  color: var(--signal-deep);
+}
+
+.blueprint-grid-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.08;
+  background-image: 
+    linear-gradient(var(--ink) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ink) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 20%, transparent 80%);
+}
+
+.gradient__text {
+  background: linear-gradient(135deg, var(--ink) 30%, var(--signal) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components";
-import { Header, About, Experience, Projects, Contacts } from "./containers";
+import { Header, Experience, Projects, Education, Skills, Contacts } from "./containers";
 import QAPage from "./pages/QAPage";
 import AdminPage from "./pages/AdminPage";
 import { seedDatabase } from "./utils/dbSeeder";
@@ -11,14 +11,19 @@ import { seedDatabase } from "./utils/dbSeeder";
 function MainPortfolio() {
   return (
     <div className="App">
+      <Navbar />
       <div className="gradient__bg">
-        <Navbar />
-        <Header />
+        <div className="content-width">
+          <Header />
+        </div>
       </div>
-      <About />
-      <Experience />
-      <Projects />
-      <Contacts />
+      <div className="content-width">
+        <Skills />
+        <Experience />
+        <Projects />
+        <Education />
+        <Contacts />
+      </div>
     </div>
   );
 }

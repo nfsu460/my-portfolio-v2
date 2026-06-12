@@ -1,18 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { AiOutlineDoubleRight } from "react-icons/ai";
-import { SiWipro, SiOracle, SiCisco } from "react-icons/si";
-import { FaBriefcase } from "react-icons/fa";
 import { dataStore } from "../../utils/dataStore";
 import "./experience.css";
-
-const getCompanyIcon = (company) => {
-  const name = company.toLowerCase();
-  if (name.includes("oracle")) return <SiOracle />;
-  if (name.includes("wipro")) return <SiWipro />;
-  if (name.includes("cisco")) return <SiCisco />;
-  return <FaBriefcase />;
-};
 
 function Experience() {
   const [experiences, setExperiences] = useState([]);
@@ -35,52 +24,41 @@ function Experience() {
   return (
     <div className="rr__experience section__margin" id="experience">
       <div className="rr_experience-heading">
-        <h1 className="gradient__text">Experience</h1>
+        <h1>Experience</h1>
       </div>
 
-      <div className="rr_about-container">
+      <div className="rr_experience-container">
         {loading ? (
           <div className="experience-loading">
             <div className="spinner"></div>
             <p>Loading experience timeline...</p>
           </div>
         ) : experiences.length === 0 ? (
-          <p>No experiences listed.</p>
+          <p className="experience-empty">No experiences listed.</p>
         ) : (
-          <Tabs>
-            <TabList>
-              {experiences.map((exp) => (
-                <Tab key={exp.id}>
-                  <div className="tab-icon-wrapper">
-                    {getCompanyIcon(exp.company)}
-                    <span className="tab-company-name">{exp.company}</span>
-                  </div>
-                </Tab>
-              ))}
-            </TabList>
-
-            {experiences.map((exp) => (
-              <TabPanel key={exp.id}>
-                <div className="rr_experience-panel_content">
-                  <div className="rr_experience-panel_content-header">
-                    <h2>
-                      {exp.role} @{" "}
-                      <span className="company-link">{exp.company}</span>
-                    </h2>
-                    <p>{exp.duration}</p>
-                  </div>
-                  <div className="rr_experience-panel_content-body">
-                    {exp.highlights &&
-                      exp.highlights.map((hl, index) => (
-                        <p key={index}>
-                          <AiOutlineDoubleRight /> {hl}
-                        </p>
-                      ))}
-                  </div>
+          experiences.map((exp, index) => (
+            <div className="rr_experience-card" key={exp.id || index}>
+              <div className="rr_experience-card-header">
+                <div className="rr_experience-card-title">
+                  <h2>{exp.role}</h2>
+                  <h3>
+                    @ <span className="company-link">{exp.company}</span>
+                  </h3>
                 </div>
-              </TabPanel>
-            ))}
-          </Tabs>
+                <div className="rr_experience-card-duration">
+                  <span>{exp.duration}</span>
+                </div>
+              </div>
+              <div className="rr_experience-card-body">
+                {exp.highlights &&
+                  exp.highlights.map((hl, hlIdx) => (
+                    <p key={hlIdx}>
+                      <AiOutlineDoubleRight /> {hl}
+                    </p>
+                  ))}
+              </div>
+            </div>
+          ))
         )}
       </div>
     </div>

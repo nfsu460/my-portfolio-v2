@@ -2,25 +2,6 @@ import React, { useState, useEffect } from "react";
 import { dataStore } from "../../utils/dataStore";
 import "./projects.css";
 import { Project } from "../../components";
-import myPortfoilioV2 from "../../assets/images/portfolio-v2.png";
-import myPortfoilioV1 from "../../assets/images/portfolio-v1.png";
-import coronavirusTracker from "../../assets/images/coronavirus-tracker.jpg";
-import dutyAllocation from "../../assets/images/duty-allocation.avif";
-
-const getProjectImage = (id) => {
-  switch (id) {
-    case "portfolio-v2":
-      return myPortfoilioV2;
-    case "portfolio-v1":
-      return myPortfoilioV1;
-    case "coronavirus-tracker":
-      return coronavirusTracker;
-    case "dutyallotment":
-      return dutyAllocation;
-    default:
-      return null;
-  }
-};
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -43,7 +24,7 @@ function Projects() {
   return (
     <div className="rr__projects section__padding" id="projects">
       <div className="rr__projects-heading">
-        <h1 className="gradient__text">Projects</h1>
+        <h1>Projects</h1>
       </div>
       <div className="rr__projects-container">
         {loading ? (
@@ -58,7 +39,6 @@ function Projects() {
             {projects.map((proj) => (
               <Project
                 key={proj.id}
-                imgUrl={proj.imgUrl || getProjectImage(proj.id)}
                 title={proj.title}
                 text={proj.description}
                 git_link={proj.gitLink}

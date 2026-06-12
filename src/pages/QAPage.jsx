@@ -101,17 +101,17 @@ function QAPage() {
     <div className="qa-page-container">
       <Navbar />
       
-      <div className="qa-header section__padding">
+      <div className="qa-header section__padding content-width">
         <div className="qa-header-content">
           <span className="qa-badge">Knowledge Hub</span>
-          <h1 className="gradient__text">Questions & Answers</h1>
+          <h1 className="gradient__text">Field Notes</h1>
           <p>
             An interactive repository of technical questions, explanations, and key concepts in software engineering, system design, databases, and frontend development.
           </p>
         </div>
       </div>
 
-      <div className="qa-body section__margin">
+      <div className="qa-body section__margin content-width">
         {/* Search and Filters */}
         <div className="qa-controls">
           <div className="qa-search-box">
