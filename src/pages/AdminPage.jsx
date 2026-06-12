@@ -49,16 +49,15 @@ function AdminPage() {
 
   // Handle Authentication status
   useEffect(() => {
-    if (firebaseAuth) {
-      const unsubscribe = onAuthStateChanged(firebaseAuth, (currentUser) => {
-        setUser(!!currentUser);
-        setAuthLoading(false);
-      });
-      return unsubscribe;
-    } else {
-      setUser(dataStore.isAuthenticated());
+    if (!firebaseAuth) {
       setAuthLoading(false);
+      return;
     }
+    const unsubscribe = onAuthStateChanged(firebaseAuth, (currentUser) => {
+      setUser(!!currentUser);
+      setAuthLoading(false);
+    });
+    return unsubscribe;
   }, []);
 
   // Fetch data based on active tab
@@ -105,14 +104,7 @@ function AdminPage() {
     e.preventDefault();
     setAuthError("");
     try {
-      const success = await dataStore.login(email, password);
-      if (success) {
-        if (!firebaseAuth) {
-          setUser(true);
-        }
-      } else {
-        setAuthError("Invalid email or password.");
-      }
+      await dataStore.login(email, password);
     } catch (err) {
       console.error(err);
       setAuthError(err.message || "Failed to log in. Check your credentials.");
@@ -123,9 +115,6 @@ function AdminPage() {
   const handleLogout = async () => {
     try {
       await dataStore.logout();
-      if (!firebaseAuth) {
-        setUser(false);
-      }
     } catch (err) {
       console.error(err);
     }
