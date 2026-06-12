@@ -1,117 +1,84 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { AiOutlineDoubleRight } from "react-icons/ai";
-import { SiWipro, SiOracle } from "react-icons/si";
-
+import { SiWipro, SiOracle, SiCisco } from "react-icons/si";
+import { FaBriefcase } from "react-icons/fa";
+import { dataStore } from "../../utils/dataStore";
 import "./experience.css";
 
+const getCompanyIcon = (company) => {
+  const name = company.toLowerCase();
+  if (name.includes("oracle")) return <SiOracle />;
+  if (name.includes("wipro")) return <SiWipro />;
+  if (name.includes("cisco")) return <SiCisco />;
+  return <FaBriefcase />;
+};
+
 function Experience() {
+  const [experiences, setExperiences] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    try {
+      const list = dataStore.getExperiences();
+      setExperiences(list);
+    } catch (err) {
+      console.error("Error fetching experiences:", err);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
   return (
     <div className="rr__experience section__margin" id="experience">
       <div className="rr_experience-heading">
         <h1 className="gradient__text">Experience</h1>
       </div>
-      <div className="rr_about-container">
-        <Tabs>
-          <TabList>
-            <Tab>
-              <p>
-                <SiOracle />
-              </p>
-            </Tab>
-            <Tab>
-              <p>
-                <SiWipro />
-              </p>
-            </Tab>
-          </TabList>
 
-          <TabPanel>
-            <div className="rr_experience-panel_content">
-              <div className="rr_experience-panel_content-header">
-                <h2>
-                  Application Engineer II @{" "}
-                  <a
-                    href="https://www.oracle.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Oracle
-                  </a>
-                </h2>
-                <p>September 2021 - Present</p>
-              </div>
-              <div className="rr_experience-panel_content-body">
-                <p>
-                  <AiOutlineDoubleRight /> Developed Multi-Lingual support for
-                  Knowledge skill in Oracle Digital Assistant.
-                </p>
-                <p>
-                  <AiOutlineDoubleRight /> Implemented Similar Article for
-                  Service Request using Oracle JET (JavaScript Extension
-                  Toolkit).
-                </p>
-                <p>
-                  <AiOutlineDoubleRight /> Implemented REST APIs using Helidon
-                  (Java based Microservices Framework) for Following Article
-                  Feature.
-                </p>
-                <p>
-                  <AiOutlineDoubleRight /> Revised, modularized and updated old
-                  code bases to modern development standards, reducing operating
-                  costs and improving functionality.
-                </p>
-                <p>
-                  <AiOutlineDoubleRight /> Collaborated with project managers to
-                  select ambitious, but realistic coding milestones on
-                  pre-release software project development.
-                </p>
-              </div>
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="rr_experience-panel_content">
-              <div className="rr_experience-panel_content-header">
-                <h2>
-                  Software Engineer @{" "}
-                  <a
-                    href="https://www.wipro.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Wipro
-                  </a>
-                </h2>
-                <p>June 2019 - September 2021</p>
-              </div>
-              <div className="rr_experience-panel_content-body">
-                <p>
-                  <AiOutlineDoubleRight /> Developed a program using PL/SQL
-                  &amp; Python that automatically creates and publishes a report
-                  to Microsoft SharePoint at a defined interval, scheduled with
-                  BMC Control-M, Reducing Manual Efforts.
-                </p>
-                <p>
-                  <AiOutlineDoubleRight /> Developed a program that reads a huge
-                  data set from binary excel and loads into oracle tables using
-                  Python. A PL/SQL Procedure is created to process the data.
-                </p>
-                <p>
-                  <AiOutlineDoubleRight /> Completed Multiple Application
-                  Enhancements (Java, PL/SQL &amp; Informatica Workflows).
-                </p>
-                <p>
-                  <AiOutlineDoubleRight /> Critical Bug Fixes in multiple
-                  applications and Informatica workflow.
-                </p>
-                <p>
-                  <AiOutlineDoubleRight /> Improved Performance of SQL Queries
-                  and PL/SQL Packages, Procedures, and Functions.
-                </p>
-              </div>
-            </div>
-          </TabPanel>
-        </Tabs>
+      <div className="rr_about-container">
+        {loading ? (
+          <div className="experience-loading">
+            <div className="spinner"></div>
+            <p>Loading experience timeline...</p>
+          </div>
+        ) : experiences.length === 0 ? (
+          <p>No experiences listed.</p>
+        ) : (
+          <Tabs>
+            <TabList>
+              {experiences.map((exp) => (
+                <Tab key={exp.id}>
+                  <div className="tab-icon-wrapper">
+                    {getCompanyIcon(exp.company)}
+                    <span className="tab-company-name">{exp.company}</span>
+                  </div>
+                </Tab>
+              ))}
+            </TabList>
+
+            {experiences.map((exp) => (
+              <TabPanel key={exp.id}>
+                <div className="rr_experience-panel_content">
+                  <div className="rr_experience-panel_content-header">
+                    <h2>
+                      {exp.role} @{" "}
+                      <span className="company-link">{exp.company}</span>
+                    </h2>
+                    <p>{exp.duration}</p>
+                  </div>
+                  <div className="rr_experience-panel_content-body">
+                    {exp.highlights &&
+                      exp.highlights.map((hl, index) => (
+                        <p key={index}>
+                          <AiOutlineDoubleRight /> {hl}
+                        </p>
+                      ))}
+                  </div>
+                </div>
+              </TabPanel>
+            ))}
+          </Tabs>
+        )}
       </div>
     </div>
   );
