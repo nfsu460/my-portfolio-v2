@@ -5,9 +5,9 @@ import {
 } from "react-icons/fa";
 import { 
   SiSpring, SiSpringboot, SiKubernetes, SiApachekafka, SiElasticsearch, 
-  SiMongodb, SiPostgresql, SiMysql, SiOracle, SiScala, SiGradle, 
+  SiMongodb, SiPostgresql, SiMysql, SiScala, SiGradle, 
   SiApachemaven, SiYaml, SiApachegroovy, SiOpensearch, 
-  SiAmazondynamodb, SiLiquibase, SiAmazoncloudwatch, SiGithubactions, SiHibernate 
+  SiLiquibase, SiGithubactions, SiHibernate 
 } from "react-icons/si";
 import { AiOutlineApi } from "react-icons/ai";
 import { dataStore } from "../../utils/dataStore";
@@ -25,13 +25,13 @@ const getSkillIcon = (name) => {
   if (n.includes("kafka")) return <SiApachekafka />;
   if (n.includes("postgresql")) return <SiPostgresql />;
   if (n.includes("mysql")) return <SiMysql />;
-  if (n.includes("oracle")) return <SiOracle />;
+  if (n.includes("oracle")) return <FaDatabase />;
   if (n.includes("mongodb")) return <SiMongodb />;
-  if (n.includes("dynamodb")) return <SiAmazondynamodb />;
+  if (n.includes("dynamodb")) return <FaDatabase />;
   if (n.includes("liquibase")) return <SiLiquibase />;
   if (n.includes("elasticsearch")) return <SiElasticsearch />;
   if (n.includes("opensearch")) return <SiOpensearch />;
-  if (n.includes("cloudwatch")) return <SiAmazoncloudwatch />;
+  if (n.includes("cloudwatch")) return <FaAws />;
   if (n.includes("aws")) return <FaAws />;
   if (n.includes("jenkins")) return <FaJenkins />;
   if (n.includes("git") || n.includes("github")) return <FaGitAlt />;
