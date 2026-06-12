@@ -21,23 +21,26 @@ function About() {
   ]);
 
   useEffect(() => {
-    try {
-      const data = dataStore.getProfile();
-      if (data) {
-        if (data.personal && data.personal.about) {
-          setAboutText(data.personal.about);
-        }
-        if (data.skills) {
-          // Flatten skills from all categories for the quick tech checklist
-          const flatSkills = Object.values(data.skills).flat();
-          if (flatSkills.length > 0) {
-            setSkills(flatSkills.slice(0, 12)); // Take first 12 skills for display
+    const fetchData = async () => {
+      try {
+        const data = await dataStore.getProfile();
+        if (data) {
+          if (data.personal && data.personal.about) {
+            setAboutText(data.personal.about);
+          }
+          if (data.skills) {
+            // Flatten skills from all categories for the quick tech checklist
+            const flatSkills = Object.values(data.skills).flat();
+            if (flatSkills.length > 0) {
+              setSkills(flatSkills.slice(0, 12)); // Take first 12 skills for display
+            }
           }
         }
+      } catch (err) {
+        console.error("Error fetching about data:", err);
       }
-    } catch (err) {
-      console.error("Error fetching about data:", err);
-    }
+    };
+    fetchData();
   }, []);
 
   return (

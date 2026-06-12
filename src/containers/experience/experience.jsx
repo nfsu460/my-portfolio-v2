@@ -19,14 +19,17 @@ function Experience() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    try {
-      const list = dataStore.getExperiences();
-      setExperiences(list);
-    } catch (err) {
-      console.error("Error fetching experiences:", err);
-    } finally {
-      setLoading(false);
-    }
+    const fetchData = async () => {
+      try {
+        const list = await dataStore.getExperiences();
+        setExperiences(list);
+      } catch (err) {
+        console.error("Error fetching experiences:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
   }, []);
 
   return (

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { dataStore } from "../utils/dataStore";
 import Navbar from "../components/navbar/navbar";
 import { FaLock, FaSignOutAlt, FaPlus, FaTrash, FaEdit, FaSave, FaTimes } from "react-icons/fa";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth as firebaseAuth } from "../firebase";
 import "./AdminPage.css";
 
 function AdminPage() {
@@ -47,34 +49,42 @@ function AdminPage() {
 
   // Handle Authentication status
   useEffect(() => {
-    setUser(dataStore.isAuthenticated());
-    setAuthLoading(false);
+    if (firebaseAuth) {
+      const unsubscribe = onAuthStateChanged(firebaseAuth, (currentUser) => {
+        setUser(!!currentUser);
+        setAuthLoading(false);
+      });
+      return unsubscribe;
+    } else {
+      setUser(dataStore.isAuthenticated());
+      setAuthLoading(false);
+    }
   }, []);
 
   // Fetch data based on active tab
   useEffect(() => {
     if (!user) return;
 
-    const fetchData = () => {
+    const fetchData = async () => {
       setLoadingData(true);
       showFeedback("", "");
       try {
         if (activeTab === "resume") {
-          const profile = dataStore.getProfile();
+          const profile = await dataStore.getProfile();
           setResumeData(profile);
         } else if (activeTab === "experience") {
-          const list = dataStore.getExperiences();
+          const list = await dataStore.getExperiences();
           setExperiences(list);
         } else if (activeTab === "projects") {
-          const list = dataStore.getProjects();
+          const list = await dataStore.getProjects();
           setProjects(list);
         } else if (activeTab === "qa") {
-          const list = dataStore.getQuestions();
+          const list = await dataStore.getQuestions();
           setQuestions(list);
         }
       } catch (err) {
         console.error("Error fetching data:", err);
-        showFeedback("error", "Failed to load records from local storage.");
+        showFeedback("error", "Failed to load records.");
       } finally {
         setLoadingData(false);
       }
@@ -91,28 +101,41 @@ function AdminPage() {
   };
 
   // Login handler
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     setAuthError("");
-    const success = dataStore.login(email, password);
-    if (success) {
-      setUser(true);
-    } else {
-      setAuthError("Invalid email or password. Hint: admin@portfolio.com / admin123");
+    try {
+      const success = await dataStore.login(email, password);
+      if (success) {
+        if (!firebaseAuth) {
+          setUser(true);
+        }
+      } else {
+        setAuthError("Invalid email or password.");
+      }
+    } catch (err) {
+      console.error(err);
+      setAuthError(err.message || "Failed to log in. Check your credentials.");
     }
   };
 
   // Logout handler
-  const handleLogout = () => {
-    dataStore.logout();
-    setUser(false);
+  const handleLogout = async () => {
+    try {
+      await dataStore.logout();
+      if (!firebaseAuth) {
+        setUser(false);
+      }
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   /* RESUME OPERATIONS */
-  const handleSaveResumePersonal = (e) => {
+  const handleSaveResumePersonal = async (e) => {
     e.preventDefault();
     try {
-      dataStore.saveProfile(resumeData.personal, resumeData.skills, resumeData.achievements);
+      await dataStore.saveProfile(resumeData.personal, resumeData.skills, resumeData.achievements);
       showFeedback("success", "Profile saved successfully!");
     } catch (err) {
       console.error(err);
@@ -197,7 +220,7 @@ function AdminPage() {
     }
   };
 
-  const handleSaveExperience = (e) => {
+  const handleSaveExperience = async (e) => {
     e.preventDefault();
     if (!expForm.id.trim() || !expForm.company.trim()) {
       showFeedback("error", "ID and Company fields are required.");
@@ -205,7 +228,7 @@ function AdminPage() {
     }
 
     try {
-      dataStore.saveExperience(expForm);
+      await dataStore.saveExperience(expForm);
       showFeedback("success", "Work experience saved!");
       setEditingExp(null);
       // reload
@@ -217,10 +240,10 @@ function AdminPage() {
     }
   };
 
-  const handleDeleteExperience = (id) => {
+  const handleDeleteExperience = async (id) => {
     if (!window.confirm("Are you sure you want to delete this experience record?")) return;
     try {
-      dataStore.deleteExperience(id);
+      await dataStore.deleteExperience(id);
       showFeedback("success", "Experience deleted.");
       setExperiences(experiences.filter((exp) => exp.id !== id));
     } catch (err) {
@@ -255,7 +278,7 @@ function AdminPage() {
     }
   };
 
-  const handleSaveProject = (e) => {
+  const handleSaveProject = async (e) => {
     e.preventDefault();
     if (!projForm.id.trim() || !projForm.title.trim()) {
       showFeedback("error", "ID and Title are required.");
@@ -263,7 +286,7 @@ function AdminPage() {
     }
 
     try {
-      dataStore.saveProject(projForm);
+      await dataStore.saveProject(projForm);
       showFeedback("success", "Project entry saved!");
       setEditingProj(null);
       // reload
@@ -275,10 +298,10 @@ function AdminPage() {
     }
   };
 
-  const handleDeleteProject = (id) => {
+  const handleDeleteProject = async (id) => {
     if (!window.confirm("Delete this project entry?")) return;
     try {
-      dataStore.deleteProject(id);
+      await dataStore.deleteProject(id);
       showFeedback("success", "Project deleted.");
       setProjects(projects.filter((p) => p.id !== id));
     } catch (err) {
@@ -298,7 +321,7 @@ function AdminPage() {
     }
   };
 
-  const handleSaveQA = (e) => {
+  const handleSaveQA = async (e) => {
     e.preventDefault();
     if (!qaForm.question.trim() || !qaForm.answer.trim()) {
       showFeedback("error", "Question and Answer fields are required.");
@@ -310,7 +333,7 @@ function AdminPage() {
         ...qaForm,
         createdAt: qaForm.createdAt || new Date().toISOString()
       };
-      dataStore.saveQuestion(payload);
+      await dataStore.saveQuestion(payload);
       showFeedback("success", "Q&A saved!");
       setEditingQA(null);
       // reload
@@ -322,10 +345,10 @@ function AdminPage() {
     }
   };
 
-  const handleDeleteQA = (id) => {
+  const handleDeleteQA = async (id) => {
     if (!window.confirm("Delete this Q&A?")) return;
     try {
-      dataStore.deleteQuestion(id);
+      await dataStore.deleteQuestion(id);
       showFeedback("success", "Q&A deleted.");
       setQuestions(questions.filter((q) => q.id !== id));
     } catch (err) {

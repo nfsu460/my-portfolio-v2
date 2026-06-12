@@ -11,14 +11,17 @@ function Header() {
   });
 
   useEffect(() => {
-    try {
-      const data = dataStore.getProfile();
-      if (data && data.personal) {
-        setPersonal(data.personal);
+    const fetchData = async () => {
+      try {
+        const data = await dataStore.getProfile();
+        if (data && data.personal) {
+          setPersonal(data.personal);
+        }
+      } catch (err) {
+        console.error("Error fetching header info:", err);
       }
-    } catch (err) {
-      console.error("Error fetching header info:", err);
-    }
+    };
+    fetchData();
   }, []);
 
   return (
