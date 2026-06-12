@@ -17,16 +17,19 @@ function Navbar() {
       <div className="rr__navbar-links">
         <div className="rr__navbar-links_container">
           <p>
-            <a href="#about">About</a>
+            <a href="/#about">About</a>
           </p>
           <p>
-            <a href="#experience">Experience</a>
+            <a href="/#experience">Experience</a>
           </p>
           <p>
-            <a href="#projects">Projects</a>
+            <a href="/#projects">Projects</a>
           </p>
           <p>
-            <a href="#contacts">Contacts</a>
+            <a href="/#contacts">Contacts</a>
+          </p>
+          <p>
+            <a href="/qa">Q&A</a>
           </p>
         </div>
       </div>
@@ -53,16 +56,22 @@ function Navbar() {
           <div className="rr__navbar-menu_container scale-up-center">
             <div className="rr__navbar-menu_container-links">
               <p>
-                <a href="#about">About</a>
+                <a href="/#about">About</a>
               </p>
               <p>
-                <a href="#experience">Experience</a>
+                <a href="/#experience">Experience</a>
               </p>
               <p>
-                <a href="#projects">Projects</a>
+                <a href="/#projects">Projects</a>
               </p>
               <p>
-                <a href="#contacts">Contacts</a>
+                <a href="/#contacts">Contacts</a>
+              </p>
+              <p>
+                <a href="/qa">Q&A</a>
+              </p>
+              <p>
+                <a href="/admin">Admin</a>
               </p>
             </div>
             <div className="rr__navbar-menu_container-links-sign">

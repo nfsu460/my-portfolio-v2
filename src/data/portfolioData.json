@@ -1,0 +1,160 @@
+{
+  "personal": {
+    "name": "Rahul",
+    "email": "nfsu460@gmail.com",
+    "phone": "+91-9608357979",
+    "github": "https://github.com/rahul460",
+    "linkedin": "https://linkedin.com/in/rahul460",
+    "leetcode": "https://leetcode.com/rahul_rahul/",
+    "hackerrank": "https://www.hackerrank.com/Rahul460",
+    "tagline": "I build things for the web.",
+    "about": "Hello! My name is Rahul and I enjoy creating things that live on the internet. My interest in web development started back in 2016 when I decided to clone Tinder as my learning project — turns out hacking together a custom reblog button taught me a lot about HTML, CSS, JavaScript, and PHP!\n\nFast-forward to today, and I've had the privilege of working across organizations like Wipro, Oracle, Cisco, and Omnissa. My primary focus is building robust, high-performance backend microservices, event-driven streaming pipelines, and elegant, accessible user interfaces."
+  },
+  "skills": {
+    "Languages": ["Java", "Scala", "Python", "SQL", "PL/SQL", "Groovy"],
+    "Backend & Architecture": ["Spring Boot", "Microservices", "REST APIs", "Akka", "Hibernate", "JPA", "Design Patterns"],
+    "Data & Storage": ["PostgreSQL", "MySQL", "Oracle", "MongoDB", "DynamoDB", "Liquibase (Schema Management)"],
+    "Event Streaming & Search": ["Apache Kafka", "Elasticsearch", "OpenSearch"],
+    "Cloud & DevOps": ["AWS (EC2, DynamoDB, CloudWatch)", "Docker", "Kubernetes", "Jenkins", "CI/CD Pipelines", "YAML"],
+    "Build Tools": ["Maven", "sbt", "Gradle"],
+    "Version Control": ["Git (GitHub, Bitbucket)"]
+  },
+  "education": [
+    {
+      "degree": "B. Tech in Information Technology",
+      "institution": "Haldia Institute of Technology",
+      "location": "West Bengal",
+      "duration": "Aug 2015 – Jun 2019",
+      "grade": "CGPA: 8.25"
+    }
+  ],
+  "achievements": [
+    "Received appreciation for quickly ramping up on new technologies and making impactful contributions shortly after joining the team. (Omnissa)",
+    "Promoted within the organization for demonstrating exceptional technical skills, ownership, and consistently delivering high-quality work with the highest rating. (Cisco)"
+  ],
+  "experience": [
+    {
+      "id": "omnissa",
+      "company": "Omnissa LLC",
+      "role": "Member of Technical Staff III",
+      "location": "Bangalore",
+      "duration": "Nov 2024 - Present",
+      "highlights": [
+        "Rapidly adopted LLM tooling and established best practices across teams, including prompt engineering, agent rule frameworks, and token optimization strategies to improve efficiency and output quality.",
+        "Built and scaled microservices in the security domain to deliver near real-time notifications to clients using event-driven architecture.",
+        "Owned feature delivery end-to-end as an individual contributor, from requirement clarification and design discussions to implementation, testing, and production rollout.",
+        "Diagnosed and fixed high-impact production issues (including Kafka timeout-related crashes), improving service reliability and reducing incident risk.",
+        "Drove cross-functional execution by working closely with product managers and partner teams to define scope, review designs, and deliver stable releases on schedule.",
+        "Improved service quality through stronger testing, code quality checks, and operational monitoring practices."
+      ],
+      "order": 1
+    },
+    {
+      "id": "cisco",
+      "company": "Cisco Systems",
+      "role": "Software Engineer II",
+      "location": "Bangalore",
+      "duration": "May 2022 – Nov 2024",
+      "highlights": [
+        "Scaled a Scala-based microservice to support higher tenant density by redesigning state handling and key partitioning.",
+        "Reduced startup time and sped up deployments through configuration optimization.",
+        "Led migration from in-memory storage to PostgreSQL with Liquibase-based schema versioning.",
+        "Improved system stability by reviewing critical design/code changes and fixing recurring production issues."
+      ],
+      "order": 2
+    },
+    {
+      "id": "oracle",
+      "company": "Oracle",
+      "role": "Application Engineer",
+      "location": "Bangalore",
+      "duration": "Sep 2021 – May 2022",
+      "highlights": [
+        "Developed Multi-Lingual support for Knowledge skill in Oracle Digital Assistant.",
+        "Implemented Similar Article for Service Request using Oracle JET (JavaScript Extension Toolkit).",
+        "Implemented REST APIs using Helidon (Java based Microservices Framework) for Following Article Feature.",
+        "Built and maintained backend modules using Java and PL/SQL for enterprise workflows.",
+        "Improved release quality by streamlining test execution and fixing defects earlier in the cycle."
+      ],
+      "order": 3
+    },
+    {
+      "id": "wipro",
+      "company": "Wipro Limited",
+      "role": "Application Engineer",
+      "location": "Bangalore",
+      "duration": "Jun 2019 – Sep 2021",
+      "highlights": [
+        "Developed a program using PL/SQL & Python that automatically creates and publishes a report to Microsoft SharePoint at a defined interval, scheduled with BMC Control-M, reducing manual efforts.",
+        "Developed a program that reads a huge data set from binary excel and loads into oracle tables using Python, utilizing a PL/SQL Procedure to process the loaded data.",
+        "Completed multiple application enhancements involving Java, PL/SQL, and Informatica Workflows.",
+        "Implemented critical bug fixes and optimized the performance of complex SQL queries, PL/SQL packages, procedures, and functions."
+      ],
+      "order": 4
+    }
+  ],
+  "projects": [
+    {
+      "id": "portfolio-v2",
+      "title": "Portfolio V2",
+      "description": "Personal portfolio website showcasing works, skills, and professional journey. Rewritten using Vite, React, and integrated with local storage mock database.",
+      "gitLink": "https://www.github.com/nfsu460/my-portfolio-v2",
+      "imgUrl": "",
+      "order": 1
+    },
+    {
+      "id": "portfolio-v1",
+      "title": "Portfolio V1",
+      "description": "Previous portfolio website. Built with Gatsby and JavaScript to showcase work and experience.",
+      "gitLink": "https://www.github.com/nfsu460/my-portfolio",
+      "imgUrl": "",
+      "order": 2
+    },
+    {
+      "id": "coronavirus-tracker",
+      "title": "Coronavirus Tracker",
+      "description": "A minimal dashboard application displaying global daily COVID-19 cases and daily changes. Technologies: Java, Spring Boot, REST APIs, Bootstrap.",
+      "gitLink": "https://github.com/nfsu460/coronavirus-tracker",
+      "imgUrl": "",
+      "order": 3
+    },
+    {
+      "id": "dutyallotment",
+      "title": "Department Duty Allocation",
+      "description": "Final year college project automating work and duty distribution among department personnel. Technologies: Java (Servlets & JSP), JavaScript, MySQL, HTML, CSS.",
+      "gitLink": "https://github.com/nfsu460/dutyallotment",
+      "imgUrl": "",
+      "order": 4
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What are the key benefits of using Apache Kafka for event-driven systems?",
+      "answer": "Apache Kafka offers outstanding scalability, high throughput, and fault tolerance. Key benefits include:\n\n1. **Decoupling**: It decouples message producers and consumers.\n2. **Durability**: Messages are persisted on disk and replicated across the cluster to prevent data loss.\n3. **Scalability**: Topics can be partitioned to scale read/write operations across multiple brokers.\n4. **Replayability**: Consumers can read messages at their own pace and replay messages if needed.",
+      "tags": ["Kafka", "System Design", "Backend"],
+      "createdAt": "2026-05-20T10:00:00.000Z"
+    },
+    {
+      "id": "q2",
+      "question": "How do you achieve microservices transaction consistency? (Saga Pattern)",
+      "answer": "In a microservices architecture, transactions span multiple databases. Consistency is typically achieved using the **Saga Pattern** instead of traditional 2-Phase Commit (which degrades performance).\n\nA Saga consists of a sequence of local transactions. Each local transaction updates the database and publishes an event. If a step fails, the Saga executes **compensating transactions** to roll back changes made by previous steps. Sagas can be **Orchestration-based** (central coordinator) or **Choreography-based** (event-driven).",
+      "tags": ["Microservices", "System Design", "Backend"],
+      "createdAt": "2026-05-20T10:01:00.000Z"
+    },
+    {
+      "id": "q3",
+      "question": "What is the difference between SQL indexes (B-Tree vs Hash)?",
+      "answer": "1. **B-Tree Indexes**: Organize data in a balanced tree structure. They are highly efficient for range queries (e.g., `WHERE age BETWEEN 20 AND 30`), inequality searches, and sorting. They support prefix matching.\n2. **Hash Indexes**: Use a hash table. They are extremely fast ($O(1)$) for point lookups (e.g., `WHERE id = 5`), but they do not support range queries, sorting, or prefix matchings.",
+      "tags": ["Database", "SQL"],
+      "createdAt": "2026-05-20T10:02:00.000Z"
+    },
+    {
+      "id": "q4",
+      "question": "How does React state batching work in React 18?",
+      "answer": "In React 18, **Automatic Batching** is enabled by default. React batches multiple state updates together into a single re-render, regardless of where the state updates originate. This includes updates inside promises, timeouts, native event handlers, or asynchronous callbacks. Previously (in React 17 and below), CRA only batched updates within React event handlers.",
+      "tags": ["React", "JavaScript"],
+      "createdAt": "2026-05-20T10:03:00.000Z"
+    }
+  ]
+}
