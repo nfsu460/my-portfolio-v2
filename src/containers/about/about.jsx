@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { dataStore } from "../../utils/dataStore";
 import "./about.css";
 import dp from "../../assets/images/dp_3.png";
-import { FaTerminal } from "react-icons/fa";
 
 function About() {
   const [aboutText, setAboutText] = useState(
@@ -21,23 +20,26 @@ function About() {
   ]);
 
   useEffect(() => {
-    try {
-      const data = dataStore.getProfile();
-      if (data) {
-        if (data.personal && data.personal.about) {
-          setAboutText(data.personal.about);
-        }
-        if (data.skills) {
-          // Flatten skills from all categories for the quick tech checklist
-          const flatSkills = Object.values(data.skills).flat();
-          if (flatSkills.length > 0) {
-            setSkills(flatSkills.slice(0, 12)); // Take first 12 skills for display
+    const fetchData = async () => {
+      try {
+        const data = await dataStore.getProfile();
+        if (data) {
+          if (data.personal && data.personal.about) {
+            setAboutText(data.personal.about);
+          }
+          if (data.skills) {
+            // Flatten skills from all categories for the quick tech checklist
+            const flatSkills = Object.values(data.skills).flat();
+            if (flatSkills.length > 0) {
+              setSkills(flatSkills.slice(0, 12)); // Take first 12 skills for display
+            }
           }
         }
+      } catch (err) {
+        console.error("Error fetching about data:", err);
       }
-    } catch (err) {
-      console.error("Error fetching about data:", err);
-    }
+    };
+    fetchData();
   }, []);
 
   return (
@@ -45,28 +47,25 @@ function About() {
       <div className="rr_about-heading">
         <h1 className="gradient__text">About Me</h1>
       </div>
-      <div className="rr_about-container">
+      <div className="rr_about-container surface-card">
+        <div className="blueprint-grid-bg" />
         <div className="rr_about-content">
           {aboutText.split("\n\n").map((para, i) => (
-            <React.Fragment key={i}>
-              <p>{para}</p>
-              {i < aboutText.split("\n\n").length - 1 && <br />}
-            </React.Fragment>
+            <p key={i} className="about-paragraph">{para}</p>
           ))}
-          <br />
-          <p>Here are a few technologies I&apos;ve been working with recently:</p>
-          <br />
+          <p className="skills-intro">Here are a few technologies I&apos;ve been working with recently:</p>
           <div className="rr_about-skills">
             {skills.map((skill, index) => (
-              <p key={index}>
-                <FaTerminal /> {" "}{skill}
-              </p>
+              <span key={index} className="chip-tech">
+                {skill}
+              </span>
             ))}
           </div>
-          <br />
         </div>
         <div className="rr_about-image">
-          <img src={dp} alt="profile" />
+          <div className="rr_about-image-container">
+            <img src={dp} alt="profile" />
+          </div>
         </div>
       </div>
     </div>

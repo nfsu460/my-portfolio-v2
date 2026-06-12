@@ -1,27 +1,27 @@
-.rr__experience {
+.rr__education {
   display: flex;
   flex-direction: column;
 }
 
-.rr_experience-heading {
+.rr__education-heading {
   margin-bottom: 1.5rem;
 }
 
-.rr_experience-heading h1 {
+.rr__education-heading h1 {
   font-family: var(--font-display);
   font-size: clamp(2rem, 3.5vw, 3rem);
   font-weight: 800;
   color: var(--ink);
 }
 
-.rr_experience-container {
-  display: flex;
-  flex-direction: column;
+.rr__education-container {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
   width: 100%;
 }
 
-.rr_experience-card {
+.rr__education-card {
   display: flex;
   flex-direction: column;
   background-color: var(--surface);
@@ -35,7 +35,7 @@
   gap: 1.25rem;
 }
 
-.rr_experience-card::before {
+.rr__education-card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -47,37 +47,34 @@
   background-size: 20px 20px;
 }
 
-.rr_experience-card:hover {
+.rr__education-card:hover {
   transform: translate(-3px, -3px);
   box-shadow: 10px 10px 0px var(--signal);
 }
 
-.rr_experience-card-header {
+.rr__education-card-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1.5rem;
 }
 
-.rr_experience-card-title h2 {
+.rr__education-card-title h2 {
   font-family: var(--font-display);
-  font-size: clamp(1.25rem, 1.6vw, 1.6rem);
+  font-size: clamp(1.2rem, 1.6vw, 1.6rem);
   font-weight: 800;
   color: var(--ink);
   line-height: 1.2;
 }
 
-.rr_experience-card-title h3 {
+.rr__education-card-title h3 {
   font-size: 1.05rem;
   font-weight: 600;
   margin-top: 0.25rem;
+  color: var(--ink);
 }
 
-.company-link {
-  color: var(--signal);
-}
-
-.rr_experience-card-duration {
+.rr__education-card-duration {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 600;
@@ -91,29 +88,39 @@
   white-space: nowrap;
 }
 
-.rr_experience-card-body {
+.rr__education-card-details {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: auto;
+  border-top: 2px dashed rgba(var(--ink-rgb), 0.15);
+  padding-top: 1.25rem;
 }
 
-.rr_experience-card-body p {
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
-  line-height: 1.6;
+.rr__education-card-location {
+  font-size: 0.95rem;
   color: var(--ink);
-  opacity: 0.85;
+  opacity: 0.8;
   display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.rr_experience-card-body p svg {
-  color: var(--signal);
-  margin-top: 0.25rem;
-  flex-shrink: 0;
+.rr__education-card-grade {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--signal-deep);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1.5px solid var(--ink);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.6rem;
+  box-shadow: 2px 2px 0px var(--ink);
 }
 
-.experience-loading {
+.education-loading {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,7 +131,7 @@
   gap: 1rem;
 }
 
-.experience-empty {
+.education-empty {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   text-align: center;
@@ -134,10 +141,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .rr_experience-card {
+  .rr__education-card {
     padding: 1.75rem;
   }
-  .rr_experience-card-header {
+  .rr__education-card-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
@@ -145,9 +152,15 @@
 }
 
 @media screen and (max-width: 480px) {
-  .rr_experience-card {
+  .rr__education-card {
     padding: 1.25rem 1rem;
     gap: 1rem;
+  }
+  .rr__education-card-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding-top: 1rem;
   }
 }
 

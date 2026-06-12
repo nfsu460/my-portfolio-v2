@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "my-portfolio-rrahul"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }

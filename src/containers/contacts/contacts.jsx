@@ -14,24 +14,27 @@ function Contacts() {
   });
 
   useEffect(() => {
-    try {
-      const data = dataStore.getProfile();
-      if (data && data.personal) {
-        setContactInfo({
-          email: data.personal.email || "nfsu460@gmail.com",
-          github: data.personal.github || "https://www.github.com/nfsu460",
-          linkedin: data.personal.linkedin || "https://linkedin.com/in/rahul460",
-          leetcode: data.personal.leetcode || "https://leetcode.com/rahul_rahul/",
-          hackerrank: data.personal.hackerrank || "https://www.hackerrank.com/Rahul460"
-        });
+    const fetchData = async () => {
+      try {
+        const data = await dataStore.getProfile();
+        if (data && data.personal) {
+          setContactInfo({
+            email: data.personal.email || "nfsu460@gmail.com",
+            github: data.personal.github || "https://www.github.com/nfsu460",
+            linkedin: data.personal.linkedin || "https://linkedin.com/in/rahul460",
+            leetcode: data.personal.leetcode || "https://leetcode.com/rahul_rahul/",
+            hackerrank: data.personal.hackerrank || "https://www.hackerrank.com/Rahul460"
+          });
+        }
+      } catch (err) {
+        console.error("Error fetching contacts:", err);
       }
-    } catch (err) {
-      console.error("Error fetching contacts:", err);
-    }
+    };
+    fetchData();
   }, []);
 
   return (
-    <div className="rr__contacts section__padding" id="contacts">
+    <div className="rr__contacts" id="contacts">
       <div className="rr__contacts-heading">
         <h1 className="gradient__text">Get In Touch</h1>
         <p>
@@ -39,57 +42,32 @@ function Contacts() {
           is always open. Whether you have a question or just want to say hi,
           I’ll try my best to get back to you!
         </p>
-        <br />
-        <p>
-          <a
-            href={contactInfo.github}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <AiFillGithub />
-            {" Github"}
+        <div className="rr__contacts-links">
+          <a href={contactInfo.github} target="_blank" rel="noreferrer">
+            <AiFillGithub /> Github
           </a>
-        </p>
-        <p>
-          <a
-            href={contactInfo.linkedin}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <AiFillLinkedin />
-            {" LinkedIn"}
+          <a href={contactInfo.linkedin} target="_blank" rel="noreferrer">
+            <AiFillLinkedin /> LinkedIn
           </a>
-        </p>
-        <p>
-          <a
-            href={contactInfo.leetcode}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <SiLeetcode />
-            {" Leetcode"}
+          <a href={contactInfo.leetcode} target="_blank" rel="noreferrer">
+            <SiLeetcode /> Leetcode
           </a>
-        </p>
-        <p>
-          <a
-            href={contactInfo.hackerrank}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <SiHackerrank />
-            {" HackerRank"}
+          <a href={contactInfo.hackerrank} target="_blank" rel="noreferrer">
+            <SiHackerrank /> HackerRank
           </a>
-        </p>
+        </div>
       </div>
 
-      <div className="rr__contacts-btn">
-        <a href={`mailto:${contactInfo.email}`}>
-          <p>Say Hello</p>
+      <div className="rr__contacts-box">
+        <span className="rr__contacts-box-email">{contactInfo.email}</span>
+        <a href={`mailto:${contactInfo.email}`} className="rr__contacts-box-btn">
+          Say Hello
         </a>
       </div>
 
       <div className="rr__contacts-copyright">
-        <p>@{new Date().getFullYear()} Portfolio. All rights reserved.</p>
+
+        <p>@{new Date().getFullYear()} Rahul. All rights reserved.</p>
       </div>
     </div>
   );

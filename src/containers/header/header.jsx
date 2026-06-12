@@ -11,28 +11,33 @@ function Header() {
   });
 
   useEffect(() => {
-    try {
-      const data = dataStore.getProfile();
-      if (data && data.personal) {
-        setPersonal(data.personal);
+    const fetchData = async () => {
+      try {
+        const data = await dataStore.getProfile();
+        if (data && data.personal) {
+          setPersonal(data.personal);
+        }
+      } catch (err) {
+        console.error("Error fetching header info:", err);
       }
-    } catch (err) {
-      console.error("Error fetching header info:", err);
-    }
+    };
+    fetchData();
   }, []);
 
   return (
-    <div className="rr__header section__padding" id="home">
+    <div className="rr__header" id="home">
+      <div className="blueprint-grid-bg" />
       <div className="rr__header-content">
         <span>Hi, my name is</span>
         <h1 className="gradient__text">{personal.name}</h1>
-        <h1 className="gradient__text">{personal.tagline}</h1>
-        <br />
+        <h1>{personal.tagline}</h1>
         <p>{personal.about}</p>
       </div>
 
       <div className="rr__header-image">
-        <img src={image} alt="avatar" />
+        <div className="rr__header-image-container">
+          <img src={image} alt="avatar" />
+        </div>
       </div>
     </div>
   );

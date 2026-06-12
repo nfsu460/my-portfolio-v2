@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { dataStore } from "../utils/dataStore";
-import Navbar from "../components/navbar/navbar";
 import { FaLock, FaSignOutAlt, FaPlus, FaTrash, FaEdit, FaSave, FaTimes } from "react-icons/fa";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth as firebaseAuth } from "../firebase";
 import "./AdminPage.css";
 
 function AdminPage() {
@@ -47,34 +48,41 @@ function AdminPage() {
 
   // Handle Authentication status
   useEffect(() => {
-    setUser(dataStore.isAuthenticated());
-    setAuthLoading(false);
+    if (!firebaseAuth) {
+      setAuthLoading(false);
+      return;
+    }
+    const unsubscribe = onAuthStateChanged(firebaseAuth, (currentUser) => {
+      setUser(!!currentUser);
+      setAuthLoading(false);
+    });
+    return unsubscribe;
   }, []);
 
   // Fetch data based on active tab
   useEffect(() => {
     if (!user) return;
 
-    const fetchData = () => {
+    const fetchData = async () => {
       setLoadingData(true);
       showFeedback("", "");
       try {
         if (activeTab === "resume") {
-          const profile = dataStore.getProfile();
+          const profile = await dataStore.getProfile();
           setResumeData(profile);
         } else if (activeTab === "experience") {
-          const list = dataStore.getExperiences();
+          const list = await dataStore.getExperiences();
           setExperiences(list);
         } else if (activeTab === "projects") {
-          const list = dataStore.getProjects();
+          const list = await dataStore.getProjects();
           setProjects(list);
         } else if (activeTab === "qa") {
-          const list = dataStore.getQuestions();
+          const list = await dataStore.getQuestions();
           setQuestions(list);
         }
       } catch (err) {
         console.error("Error fetching data:", err);
-        showFeedback("error", "Failed to load records from local storage.");
+        showFeedback("error", "Failed to load records.");
       } finally {
         setLoadingData(false);
       }
@@ -91,28 +99,31 @@ function AdminPage() {
   };
 
   // Login handler
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     setAuthError("");
-    const success = dataStore.login(email, password);
-    if (success) {
-      setUser(true);
-    } else {
-      setAuthError("Invalid email or password. Hint: admin@portfolio.com / admin123");
+    try {
+      await dataStore.login(email, password);
+    } catch (err) {
+      console.error(err);
+      setAuthError(err.message || "Failed to log in. Check your credentials.");
     }
   };
 
   // Logout handler
-  const handleLogout = () => {
-    dataStore.logout();
-    setUser(false);
+  const handleLogout = async () => {
+    try {
+      await dataStore.logout();
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   /* RESUME OPERATIONS */
-  const handleSaveResumePersonal = (e) => {
+  const handleSaveResumePersonal = async (e) => {
     e.preventDefault();
     try {
-      dataStore.saveProfile(resumeData.personal, resumeData.skills, resumeData.achievements);
+      await dataStore.saveProfile(resumeData.personal, resumeData.skills, resumeData.achievements, resumeData.education);
       showFeedback("success", "Profile saved successfully!");
     } catch (err) {
       console.error(err);
@@ -197,7 +208,7 @@ function AdminPage() {
     }
   };
 
-  const handleSaveExperience = (e) => {
+  const handleSaveExperience = async (e) => {
     e.preventDefault();
     if (!expForm.id.trim() || !expForm.company.trim()) {
       showFeedback("error", "ID and Company fields are required.");
@@ -205,7 +216,7 @@ function AdminPage() {
     }
 
     try {
-      dataStore.saveExperience(expForm);
+      await dataStore.saveExperience(expForm);
       showFeedback("success", "Work experience saved!");
       setEditingExp(null);
       // reload
@@ -217,10 +228,10 @@ function AdminPage() {
     }
   };
 
-  const handleDeleteExperience = (id) => {
+  const handleDeleteExperience = async (id) => {
     if (!window.confirm("Are you sure you want to delete this experience record?")) return;
     try {
-      dataStore.deleteExperience(id);
+      await dataStore.deleteExperience(id);
       showFeedback("success", "Experience deleted.");
       setExperiences(experiences.filter((exp) => exp.id !== id));
     } catch (err) {
@@ -255,7 +266,7 @@ function AdminPage() {
     }
   };
 
-  const handleSaveProject = (e) => {
+  const handleSaveProject = async (e) => {
     e.preventDefault();
     if (!projForm.id.trim() || !projForm.title.trim()) {
       showFeedback("error", "ID and Title are required.");
@@ -263,7 +274,7 @@ function AdminPage() {
     }
 
     try {
-      dataStore.saveProject(projForm);
+      await dataStore.saveProject(projForm);
       showFeedback("success", "Project entry saved!");
       setEditingProj(null);
       // reload
@@ -275,10 +286,10 @@ function AdminPage() {
     }
   };
 
-  const handleDeleteProject = (id) => {
+  const handleDeleteProject = async (id) => {
     if (!window.confirm("Delete this project entry?")) return;
     try {
-      dataStore.deleteProject(id);
+      await dataStore.deleteProject(id);
       showFeedback("success", "Project deleted.");
       setProjects(projects.filter((p) => p.id !== id));
     } catch (err) {
@@ -298,7 +309,7 @@ function AdminPage() {
     }
   };
 
-  const handleSaveQA = (e) => {
+  const handleSaveQA = async (e) => {
     e.preventDefault();
     if (!qaForm.question.trim() || !qaForm.answer.trim()) {
       showFeedback("error", "Question and Answer fields are required.");
@@ -310,7 +321,7 @@ function AdminPage() {
         ...qaForm,
         createdAt: qaForm.createdAt || new Date().toISOString()
       };
-      dataStore.saveQuestion(payload);
+      await dataStore.saveQuestion(payload);
       showFeedback("success", "Q&A saved!");
       setEditingQA(null);
       // reload
@@ -322,10 +333,10 @@ function AdminPage() {
     }
   };
 
-  const handleDeleteQA = (id) => {
+  const handleDeleteQA = async (id) => {
     if (!window.confirm("Delete this Q&A?")) return;
     try {
-      dataStore.deleteQuestion(id);
+      await dataStore.deleteQuestion(id);
       showFeedback("success", "Q&A deleted.");
       setQuestions(questions.filter((q) => q.id !== id));
     } catch (err) {
@@ -365,7 +376,6 @@ function AdminPage() {
   if (!user) {
     return (
       <div className="admin-login-container">
-        <Navbar />
         <div className="admin-login-card">
           <div className="admin-lock-icon">
             <FaLock />
@@ -407,8 +417,7 @@ function AdminPage() {
 
   // RENDER DASHBOARD IF AUTHENTICATED
   return (
-    <div className="admin-dashboard-container">
-      <Navbar />
+    <div className="admin-dashboard-container content-width">
       
       <div className="admin-header section__padding">
         <div className="admin-header-flex">
@@ -435,7 +444,7 @@ function AdminPage() {
             Projects
           </button>
           <button className={`tab-btn ${activeTab === "qa" ? "active" : ""}`} onClick={() => { setActiveTab("qa"); setEditingQA(null); }}>
-            Q&A Topics
+            Field Notes
           </button>
         </div>
 
@@ -445,12 +454,6 @@ function AdminPage() {
           </div>
         )}
 
-        {loadingData ? (
-          <div className="admin-loading-data">
-            <div className="spinner"></div>
-            <p>Fetching collection from storage...</p>
-          </div>
-        ) : (
           <div className="admin-tab-content">
             
             {/* 1. RESUME TAB */}
@@ -461,104 +464,135 @@ function AdminPage() {
                   <div className="form-row">
                     <div className="form-group">
                       <label>Name</label>
-                      <input type="text" value={resumeData.personal.name} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, name: e.target.value}})} />
+                      <input type="text" className={loadingData ? "loading-shimmer" : ""} disabled={loadingData} value={resumeData.personal.name} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, name: e.target.value}})} />
                     </div>
                     <div className="form-group">
                       <label>Phone</label>
-                      <input type="text" value={resumeData.personal.phone} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, phone: e.target.value}})} />
+                      <input type="text" className={loadingData ? "loading-shimmer" : ""} disabled={loadingData} value={resumeData.personal.phone} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, phone: e.target.value}})} />
                     </div>
                   </div>
                   
                   <div className="form-row">
                     <div className="form-group">
                       <label>Email</label>
-                      <input type="email" value={resumeData.personal.email} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, email: e.target.value}})} />
+                      <input type="email" className={loadingData ? "loading-shimmer" : ""} disabled={loadingData} value={resumeData.personal.email} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, email: e.target.value}})} />
                     </div>
                     <div className="form-group">
                       <label>Tagline</label>
-                      <input type="text" value={resumeData.personal.tagline} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, tagline: e.target.value}})} />
+                      <input type="text" className={loadingData ? "loading-shimmer" : ""} disabled={loadingData} value={resumeData.personal.tagline} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, tagline: e.target.value}})} />
                     </div>
                   </div>
 
                   <div className="form-row">
                     <div className="form-group">
                       <label>Github</label>
-                      <input type="text" value={resumeData.personal.github} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, github: e.target.value}})} />
+                      <input type="text" className={loadingData ? "loading-shimmer" : ""} disabled={loadingData} value={resumeData.personal.github} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, github: e.target.value}})} />
                     </div>
                     <div className="form-group">
                       <label>LinkedIn</label>
-                      <input type="text" value={resumeData.personal.linkedin} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, linkedin: e.target.value}})} />
+                      <input type="text" className={loadingData ? "loading-shimmer" : ""} disabled={loadingData} value={resumeData.personal.linkedin} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, linkedin: e.target.value}})} />
                     </div>
                   </div>
 
                   <div className="form-row">
                     <div className="form-group">
                       <label>Leetcode</label>
-                      <input type="text" value={resumeData.personal.leetcode || ""} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, leetcode: e.target.value}})} />
+                      <input type="text" className={loadingData ? "loading-shimmer" : ""} disabled={loadingData} value={resumeData.personal.leetcode || ""} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, leetcode: e.target.value}})} />
                     </div>
                     <div className="form-group">
                       <label>HackerRank</label>
-                      <input type="text" value={resumeData.personal.hackerrank || ""} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, hackerrank: e.target.value}})} />
+                      <input type="text" className={loadingData ? "loading-shimmer" : ""} disabled={loadingData} value={resumeData.personal.hackerrank || ""} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, hackerrank: e.target.value}})} />
                     </div>
                   </div>
 
                   <div className="form-group">
                     <label>About Bio</label>
-                    <textarea rows="6" value={resumeData.personal.about} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, about: e.target.value}})}></textarea>
+                    <textarea rows="6" className={loadingData ? "loading-shimmer" : ""} disabled={loadingData} value={resumeData.personal.about} onChange={(e) => setResumeData({...resumeData, personal: {...resumeData.personal, about: e.target.value}})}></textarea>
                   </div>
 
                   <div className="admin-skills-editor">
                     <h3>Technical Skills</h3>
                     <div className="add-cat-row">
-                      <input type="text" placeholder="New Skill Category (e.g. Databases)" value={newSkillCategory} onChange={(e) => setNewSkillCategory(e.target.value)} />
-                      <button type="button" onClick={handleAddSkillCategory} className="add-cat-btn"><FaPlus /> Category</button>
+                      <input type="text" placeholder="New Skill Category (e.g. Databases)" value={newSkillCategory} onChange={(e) => setNewSkillCategory(e.target.value)} disabled={loadingData} className={loadingData ? "loading-shimmer" : ""} />
+                      <button type="button" onClick={handleAddSkillCategory} className="add-cat-btn" disabled={loadingData}><FaPlus /> Category</button>
                     </div>
 
-                    {Object.keys(resumeData.skills).map((cat) => (
-                      <div key={cat} className="skill-cat-card">
-                        <div className="skill-cat-header">
-                          <h4>{cat}</h4>
-                          <button type="button" onClick={() => handleDeleteSkillCategory(cat)} className="delete-cat-btn"><FaTrash /></button>
+                    {loadingData ? (
+                      <>
+                        <div className="skill-cat-card">
+                          <div className="skill-cat-header">
+                            <div className="achievement-loading-shimmer" style={{ width: "40%", height: "24px", margin: 0 }}></div>
+                          </div>
+                          <div className="skill-tags">
+                            <span className="skill-tag loading-shimmer"></span>
+                            <span className="skill-tag loading-shimmer"></span>
+                            <span className="skill-tag loading-shimmer"></span>
+                          </div>
                         </div>
-                        <div className="skill-tags">
-                          {resumeData.skills[cat].map((skill, idx) => (
-                            <span key={idx} className="skill-tag">
-                              {skill}
-                              <button type="button" onClick={() => handleDeleteSkill(cat, idx)} className="remove-skill-btn">×</button>
-                            </span>
-                          ))}
+                        <div className="skill-cat-card">
+                          <div className="skill-cat-header">
+                            <div className="achievement-loading-shimmer" style={{ width: "30%", height: "24px", margin: 0 }}></div>
+                          </div>
+                          <div className="skill-tags">
+                            <span className="skill-tag loading-shimmer"></span>
+                            <span className="skill-tag loading-shimmer"></span>
+                          </div>
                         </div>
-                        <div className="add-skill-row">
-                          <input 
-                            type="text" 
-                            placeholder="Add skill(s), comma separated" 
-                            value={newSkillNames[cat] || ""} 
-                            onChange={(e) => setNewSkillNames({...newSkillNames, [cat]: e.target.value})} 
-                            onKeyDown={(e) => e.key === "Enter" && (e.preventDefault(), handleAddSkill(cat))}
-                          />
-                          <button type="button" onClick={() => handleAddSkill(cat)} className="add-skill-btn"><FaPlus /></button>
+                      </>
+                    ) : (
+                      Object.keys(resumeData.skills).map((cat) => (
+                        <div key={cat} className="skill-cat-card">
+                          <div className="skill-cat-header">
+                            <h4>{cat}</h4>
+                            <button type="button" onClick={() => handleDeleteSkillCategory(cat)} className="delete-cat-btn"><FaTrash /></button>
+                          </div>
+                          <div className="skill-tags">
+                            {resumeData.skills[cat].map((skill, idx) => (
+                              <span key={idx} className="skill-tag">
+                                {skill}
+                                <button type="button" onClick={() => handleDeleteSkill(cat, idx)} className="remove-skill-btn">×</button>
+                              </span>
+                            ))}
+                          </div>
+                          <div className="add-skill-row">
+                            <input 
+                              type="text" 
+                              placeholder="Add skill(s), comma separated" 
+                              value={newSkillNames[cat] || ""} 
+                              onChange={(e) => setNewSkillNames({...newSkillNames, [cat]: e.target.value})} 
+                              onKeyDown={(e) => e.key === "Enter" && (e.preventDefault(), handleAddSkill(cat))}
+                            />
+                            <button type="button" onClick={() => handleAddSkill(cat)} className="add-skill-btn"><FaPlus /></button>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))
+                    )}
                   </div>
 
                   <div className="admin-achievements-editor">
                     <h3>Achievements</h3>
-                    <ul className="admin-achievements-list">
-                      {resumeData.achievements.map((ach, idx) => (
-                        <li key={idx}>
-                          <span>{ach}</span>
-                          <button type="button" onClick={() => handleDeleteAchievement(idx)} className="delete-ach-btn"><FaTrash /></button>
-                        </li>
-                      ))}
-                    </ul>
+                    {loadingData ? (
+                      <div className="admin-achievements-list">
+                        <div className="achievement-loading-shimmer"></div>
+                        <div className="achievement-loading-shimmer"></div>
+                      </div>
+                    ) : (
+                      <ul className="admin-achievements-list">
+                        {resumeData.achievements.map((ach, idx) => (
+                          <li key={idx}>
+                            <span>{ach}</span>
+                            <button type="button" onClick={() => handleDeleteAchievement(idx)} className="delete-ach-btn"><FaTrash /></button>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                     <div className="add-ach-row">
-                      <input type="text" placeholder="Add new achievement..." value={newAchievement} onChange={(e) => setNewAchievement(e.target.value)} />
-                      <button type="button" onClick={handleAddAchievement} className="add-ach-btn"><FaPlus /> Add</button>
+                      <input type="text" placeholder="Add new achievement..." value={newAchievement} onChange={(e) => setNewAchievement(e.target.value)} disabled={loadingData} className={loadingData ? "loading-shimmer" : ""} />
+                      <button type="button" onClick={handleAddAchievement} className="add-ach-btn" disabled={loadingData}><FaPlus /> Add</button>
                     </div>
                   </div>
 
-                  <button type="submit" className="save-all-btn"><FaSave /> Save Profile Details</button>
+                  <button type="submit" className="save-all-btn" disabled={loadingData}><FaSave /> Save Profile Details</button>
                 </form>
               </div>
             )}
@@ -567,25 +601,33 @@ function AdminPage() {
             {activeTab === "experience" && (
               <div className="experience-tab-view">
                 {!editingExp ? (
-                  <div>
+                  <div className="admin-tab-card">
                     <div className="section-tab-header">
                       <h3>Work History</h3>
-                      <button onClick={() => startEditExp(null)} className="add-new-btn"><FaPlus /> Add Experience</button>
+                      <button onClick={() => startEditExp(null)} className="add-new-btn" disabled={loadingData}><FaPlus /> Add Experience</button>
                     </div>
                     
                     <div className="admin-items-list">
-                      {experiences.map((exp) => (
-                        <div key={exp.id} className="admin-item-card">
-                          <div>
-                            <h4>{exp.role}</h4>
-                            <p>{exp.company} | {exp.duration}</p>
-                          </div>
-                          <div className="item-actions">
-                            <button onClick={() => startEditExp(exp)} className="edit-action-btn"><FaEdit /></button>
-                            <button onClick={() => handleDeleteExperience(exp.id)} className="delete-action-btn"><FaTrash /></button>
-                          </div>
+                      {loadingData ? (
+                        <div className="skeleton-list">
+                          <div className="skeleton-card"></div>
+                          <div className="skeleton-card"></div>
+                          <div className="skeleton-card"></div>
                         </div>
-                      ))}
+                      ) : (
+                        experiences.map((exp) => (
+                          <div key={exp.id} className="admin-item-card">
+                            <div>
+                              <h4>{exp.role}</h4>
+                              <p>{exp.company} | {exp.duration}</p>
+                            </div>
+                            <div className="item-actions">
+                              <button onClick={() => startEditExp(exp)} className="edit-action-btn"><FaEdit /></button>
+                              <button onClick={() => handleDeleteExperience(exp.id)} className="delete-action-btn"><FaTrash /></button>
+                            </div>
+                          </div>
+                        ))
+                      )}
                     </div>
                   </div>
                 ) : (
@@ -654,25 +696,33 @@ function AdminPage() {
             {activeTab === "projects" && (
               <div className="projects-tab-view">
                 {!editingProj ? (
-                  <div>
+                  <div className="admin-tab-card">
                     <div className="section-tab-header">
                       <h3>Projects List</h3>
-                      <button onClick={() => startEditProj(null)} className="add-new-btn"><FaPlus /> Add Project</button>
+                      <button onClick={() => startEditProj(null)} className="add-new-btn" disabled={loadingData}><FaPlus /> Add Project</button>
                     </div>
                     
                     <div className="admin-items-list">
-                      {projects.map((proj) => (
-                        <div key={proj.id} className="admin-item-card">
-                          <div>
-                            <h4>{proj.title}</h4>
-                            <p>{proj.description.substring(0, 100)}...</p>
-                          </div>
-                          <div className="item-actions">
-                            <button onClick={() => startEditProj(proj)} className="edit-action-btn"><FaEdit /></button>
-                            <button onClick={() => handleDeleteProject(proj.id)} className="delete-action-btn"><FaTrash /></button>
-                          </div>
+                      {loadingData ? (
+                        <div className="skeleton-list">
+                          <div className="skeleton-card"></div>
+                          <div className="skeleton-card"></div>
+                          <div className="skeleton-card"></div>
                         </div>
-                      ))}
+                      ) : (
+                        projects.map((proj) => (
+                          <div key={proj.id} className="admin-item-card">
+                            <div>
+                              <h4>{proj.title}</h4>
+                              <p>{proj.description.substring(0, 100)}...</p>
+                            </div>
+                            <div className="item-actions">
+                              <button onClick={() => startEditProj(proj)} className="edit-action-btn"><FaEdit /></button>
+                              <button onClick={() => handleDeleteProject(proj.id)} className="delete-action-btn"><FaTrash /></button>
+                            </div>
+                          </div>
+                        ))
+                      )}
                     </div>
                   </div>
                 ) : (
@@ -719,49 +769,57 @@ function AdminPage() {
               </div>
             )}
 
-            {/* 4. Q&A TAB */}
+            {/* 4. FIELD NOTES TAB */}
             {activeTab === "qa" && (
               <div className="qa-tab-view">
                 {!editingQA ? (
-                  <div>
+                  <div className="admin-tab-card">
                     <div className="section-tab-header">
-                      <h3>Q&As Database</h3>
-                      <button onClick={() => startEditQA(null)} className="add-new-btn"><FaPlus /> Add Q&A</button>
+                      <h3>Field Notes Database</h3>
+                      <button onClick={() => startEditQA(null)} className="add-new-btn" disabled={loadingData}><FaPlus /> Add Entry</button>
                     </div>
                     
                     <div className="admin-items-list">
-                      {questions.map((q) => (
-                        <div key={q.id} className="admin-item-card">
-                          <div style={{ flex: 1, paddingRight: "1rem" }}>
-                            <h4>{q.question}</h4>
-                            <div style={{ display: "flex", gap: "5px", marginTop: "5px" }}>
-                              {q.tags && q.tags.map(t => (
-                                <span key={t} className="qa-card-tag" style={{ padding: "1px 5px", fontSize: "0.7rem" }}>{t}</span>
-                              ))}
+                      {loadingData ? (
+                        <div className="skeleton-list">
+                          <div className="skeleton-card"></div>
+                          <div className="skeleton-card"></div>
+                          <div className="skeleton-card"></div>
+                        </div>
+                      ) : (
+                        questions.map((q) => (
+                          <div key={q.id} className="admin-item-card">
+                            <div style={{ flex: 1, paddingRight: "1rem" }}>
+                              <h4>{q.question}</h4>
+                              <div style={{ display: "flex", gap: "5px", marginTop: "5px" }}>
+                                {q.tags && q.tags.map(t => (
+                                  <span key={t} className="qa-card-tag" style={{ padding: "1px 5px", fontSize: "0.7rem" }}>{t}</span>
+                                ))}
+                              </div>
+                            </div>
+                            <div className="item-actions">
+                              <button onClick={() => startEditQA(q)} className="edit-action-btn"><FaEdit /></button>
+                              <button onClick={() => handleDeleteQA(q.id)} className="delete-action-btn"><FaTrash /></button>
                             </div>
                           </div>
-                          <div className="item-actions">
-                            <button onClick={() => startEditQA(q)} className="edit-action-btn"><FaEdit /></button>
-                            <button onClick={() => handleDeleteQA(q.id)} className="delete-action-btn"><FaTrash /></button>
-                          </div>
-                        </div>
-                      ))}
+                        ))
+                      )}
                     </div>
                   </div>
                 ) : (
                   <form onSubmit={handleSaveQA} className="admin-form">
                     <div className="form-modal-header">
-                      <h3>{editingQA === "new" ? "Add Q&A Item" : "Edit Q&A Item"}</h3>
+                      <h3>{editingQA === "new" ? "Add Field Note" : "Edit Field Note"}</h3>
                       <button type="button" onClick={() => setEditingQA(null)} className="close-form-btn"><FaTimes /></button>
                     </div>
 
                     <div className="form-group">
-                      <label>Question Topic/Text</label>
+                      <label>Topic / Question Title</label>
                       <input type="text" value={qaForm.question} onChange={(e) => setQaForm({...qaForm, question: e.target.value})} placeholder="e.g. How does Kafka scale?" />
                     </div>
 
                     <div className="form-group">
-                      <label>Detailed Answer (Supports newlines)</label>
+                      <label>Detailed Content / Answer (Supports newlines)</label>
                       <textarea rows="10" value={qaForm.answer} onChange={(e) => setQaForm({...qaForm, answer: e.target.value})} placeholder="Write details here... Use double-newlines for paragraphs."></textarea>
                     </div>
 
@@ -781,14 +839,13 @@ function AdminPage() {
                       </div>
                     </div>
 
-                    <button type="submit" className="save-form-btn"><FaSave /> Save Q&A</button>
+                    <button type="submit" className="save-form-btn"><FaSave /> Save Entry</button>
                   </form>
                 )}
               </div>
             )}
 
           </div>
-        )}
       </div>
     </div>
   );

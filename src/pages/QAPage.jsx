@@ -15,26 +15,29 @@ function QAPage() {
 
   // Fetch questions from dataStore
   useEffect(() => {
-    try {
-      const list = dataStore.getQuestions();
-      const fetched = [];
-      const allTags = new Set(["All"]);
+    const fetchData = async () => {
+      try {
+        const list = await dataStore.getQuestions();
+        const fetched = [];
+        const allTags = new Set(["All"]);
 
-      list.forEach((item) => {
-        fetched.push(item);
-        if (item.tags && Array.isArray(item.tags)) {
-          item.tags.forEach((tag) => allTags.add(tag));
-        }
-      });
+        list.forEach((item) => {
+          fetched.push(item);
+          if (item.tags && Array.isArray(item.tags)) {
+            item.tags.forEach((tag) => allTags.add(tag));
+          }
+        });
 
-      setQuestions(fetched);
-      setFilteredQuestions(fetched);
-      setTags(Array.from(allTags));
-    } catch (err) {
-      console.error("Error fetching questions:", err);
-    } finally {
-      setLoading(false);
-    }
+        setQuestions(fetched);
+        setFilteredQuestions(fetched);
+        setTags(Array.from(allTags));
+      } catch (err) {
+        console.error("Error fetching questions:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
   }, []);
 
   // Filter questions based on search query and selected tag
@@ -98,17 +101,17 @@ function QAPage() {
     <div className="qa-page-container">
       <Navbar />
       
-      <div className="qa-header section__padding">
+      <div className="qa-header section__padding content-width">
         <div className="qa-header-content">
           <span className="qa-badge">Knowledge Hub</span>
-          <h1 className="gradient__text">Questions & Answers</h1>
+          <h1 className="gradient__text">Field Notes</h1>
           <p>
             An interactive repository of technical questions, explanations, and key concepts in software engineering, system design, databases, and frontend development.
           </p>
         </div>
       </div>
 
-      <div className="qa-body section__margin">
+      <div className="qa-body section__margin content-width">
         {/* Search and Filters */}
         <div className="qa-controls">
           <div className="qa-search-box">

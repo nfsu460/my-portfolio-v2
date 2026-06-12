@@ -1,96 +1,187 @@
 .rr__contacts {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--surface);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 6px 6px 0px var(--ink);
+  padding: 4rem 3rem;
+  margin-top: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
 
-  background: var(--color-footer);
+.rr__contacts::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: 
+    linear-gradient(var(--ink) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ink) 1px, transparent 1px);
+  background-size: 30px 30px;
 }
 
 .rr__contacts-heading {
-  width: 100%;
-  text-align: center;
-
-  margin-bottom: 3rem;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 2;
 }
 
 .rr__contacts-heading h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
   font-weight: 800;
-  font-size: 64px;
-  line-height: 75px;
+  color: var(--ink);
+  line-height: 1.1;
 }
 
 .rr__contacts-heading p {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
-  color: var(--color-text);
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.6;
+  color: var(--ink);
+  opacity: 0.85;
 }
 
-.rr__contacts-btn {
+.rr__contacts-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.rr__contacts-links a {
+  display: inline-flex;
   align-items: center;
+  gap: 0.5rem;
+  background-color: var(--paper);
+  border: 2px solid var(--ink);
+  color: var(--ink);
+  padding: 0.45rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  box-shadow: 2px 2px 0px var(--ink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, color 0.15s ease;
+}
 
-  padding: 1rem;
-  border: 1px solid #fff;
-  text-align: center;
+.rr__contacts-links a:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--signal);
+  color: var(--signal);
+}
 
-  margin-bottom: 3rem;
+.rr__contacts-links a svg {
+  font-size: 1.1rem;
+}
+
+.rr__contacts-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--surface);
+  border: 2px solid var(--ink);
+  border-radius: 9999px;
+  padding: 4px;
+  margin-top: 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 4px 4px 0px var(--ink);
+  z-index: 2;
+  position: relative;
+}
+
+.rr__contacts-box-email {
+  font-family: var(--font-mono);
+  font-size: clamp(0.85rem, 1.1vw, 1.05rem);
+  font-weight: 700;
+  color: var(--ink);
+  padding: 0 1.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rr__contacts-box-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  background-color: var(--ink);
+  color: var(--surface);
+  border: 2px solid var(--ink);
+  border-radius: 9999px;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
 }
 
-.rr__contacts-btn p {
-  font-size: 18px;
-  font-family: var(--font-family);
-  line-height: 21px;
-  color: #fff;
-  word-spacing: 2px;
+.rr__contacts-box-btn:hover {
+  background-color: var(--signal);
+  color: var(--surface);
+  border-color: var(--ink);
 }
+
 
 .rr__contacts-copyright {
-  margin-top: 2rem;
-  text-align: center;
+  margin-top: 3.5rem;
+  border-top: 1px solid var(--border);
   width: 100%;
+  padding-top: 1.5rem;
+  z-index: 2;
 }
 
 .rr__contacts-copyright p {
-  font-size: 12px;
-  line-height: 15px;
-  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink);
+  opacity: 0.6;
 }
 
-@media screen and (max-width: 850px) {
-  .rr__contacts-heading h1 {
-    font-size: 44px;
-    line-height: 50px;
-  }
-
-  .rr__contacts-heading p {
-    font-weight: 500;
-    font-size: 16px;
+@media screen and (max-width: 650px) {
+  .rr__contacts {
+    padding: 3rem 1.5rem;
   }
 }
 
-@media screen and (max-width: 550px) {
-  .rr__contacts-heading h1 {
-    font-size: 34px;
-    line-height: 42px;
+@media screen and (max-width: 480px) {
+  .rr__contacts {
+    padding: 2.5rem 1rem;
   }
-
-  .rr__contacts-btn p {
-    font-size: 14px;
-    line-height: 20px;
+  .rr__contacts-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
   }
-
-  .rr__contacts-heading p {
-    font-size: 14px;
+  .rr__contacts-links a {
+    justify-content: center;
+  }
+  .rr__contacts-box {
+    margin-top: 1.5rem;
+    padding: 3px;
+  }
+  .rr__contacts-box-email {
+    padding: 0 0.75rem;
+    font-size: 0.8rem;
+  }
+  .rr__contacts-box-btn {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.8rem;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .rr__contacts-heading h1 {
-    font-size: 27px;
-    line-height: 38px;
-  }
-}
+
